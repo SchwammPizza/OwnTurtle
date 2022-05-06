@@ -1,0 +1,273 @@
+\hypertarget{namespacepip_1_1__internal_1_1cli_1_1cmdoptions}{}\doxysection{pip.\+\_\+internal.\+cli.\+cmdoptions Namespace Reference}
+\label{namespacepip_1_1__internal_1_1cli_1_1cmdoptions}\index{pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1cmdoptions_1_1_pip_option}{Pip\+Option}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a9ed9f7e497e8dbba527f6a3cd30cc4a0}{raise\+\_\+option\+\_\+error}} (parser, option, msg)
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_acb7a7e330188502ab48e135c1ec1bf8f}{make\+\_\+option\+\_\+group}} (group, parser)
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a0c89d90a90b1649084fc4de038cf2399}{check\+\_\+install\+\_\+build\+\_\+global}} (options, check\+\_\+options=None)
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_afa43ddd84576d071f64a63cd003644fa}{check\+\_\+dist\+\_\+restriction}} (options, check\+\_\+target=False)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a151f1f132d0e1ec4471ea9545188a9af}{help\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a462e1629688e0f1c80a5a461fd7c13be}{isolated\+\_\+mode}}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a0b1f134477a22a7364e9cc891883abe3}{require\+\_\+virtualenv}}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a4a51e45bd64777d3eed64aeac50dee00}{verbose}}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a806925ab10008ec62d410ebca06b99e3}{no\+\_\+color}}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a8518e1fd92af1f1e3356b898a8b336d2}{version}}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a6397f3a6fceda5828252d969f3f2d442}{quiet}}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_ab6ddb14e4ac6780b7faf30a1524e6976}{progress\+\_\+bar}}
+\item 
+\mbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_aa269a26012b5124280cbac9082f4063d}{log}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}shared options and groups
+
+The principle here is to define options once, but *not* instantiate them
+globally. One reason being that options with action='append' can carry state
+between parses. pip parses general options twice internally, and shouldn't
+pass on state. To be consistent, all options will follow this design.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_afa43ddd84576d071f64a63cd003644fa}\label{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_afa43ddd84576d071f64a63cd003644fa}} 
+\index{pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}!check\_dist\_restriction@{check\_dist\_restriction}}
+\index{check\_dist\_restriction@{check\_dist\_restriction}!pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}}
+\doxysubsubsection{\texorpdfstring{check\_dist\_restriction()}{check\_dist\_restriction()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+cli.\+cmdoptions.\+check\+\_\+dist\+\_\+restriction (\begin{DoxyParamCaption}\item[{}]{options,  }\item[{}]{check\+\_\+target = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Function for determining if custom platform options are allowed.
+
+:param options: The OptionParser options.
+:param check_target: Whether or not to check if --target is being used.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a0c89d90a90b1649084fc4de038cf2399}\label{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a0c89d90a90b1649084fc4de038cf2399}} 
+\index{pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}!check\_install\_build\_global@{check\_install\_build\_global}}
+\index{check\_install\_build\_global@{check\_install\_build\_global}!pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}}
+\doxysubsubsection{\texorpdfstring{check\_install\_build\_global()}{check\_install\_build\_global()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+cli.\+cmdoptions.\+check\+\_\+install\+\_\+build\+\_\+global (\begin{DoxyParamCaption}\item[{}]{options,  }\item[{}]{check\+\_\+options = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Disable wheels if per-setup.py call options are set.
+
+:param options: The OptionParser options to update.
+:param check_options: The options to check, if not supplied defaults to
+    options.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_acb7a7e330188502ab48e135c1ec1bf8f}\label{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_acb7a7e330188502ab48e135c1ec1bf8f}} 
+\index{pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}!make\_option\_group@{make\_option\_group}}
+\index{make\_option\_group@{make\_option\_group}!pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}}
+\doxysubsubsection{\texorpdfstring{make\_option\_group()}{make\_option\_group()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+cli.\+cmdoptions.\+make\+\_\+option\+\_\+group (\begin{DoxyParamCaption}\item[{}]{group,  }\item[{}]{parser }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an OptionGroup object
+group  -- assumed to be dict with 'name' and 'options' keys
+parser -- an optparse Parser
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a9ed9f7e497e8dbba527f6a3cd30cc4a0}\label{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a9ed9f7e497e8dbba527f6a3cd30cc4a0}} 
+\index{pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}!raise\_option\_error@{raise\_option\_error}}
+\index{raise\_option\_error@{raise\_option\_error}!pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}}
+\doxysubsubsection{\texorpdfstring{raise\_option\_error()}{raise\_option\_error()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+cli.\+cmdoptions.\+raise\+\_\+option\+\_\+error (\begin{DoxyParamCaption}\item[{}]{parser,  }\item[{}]{option,  }\item[{}]{msg }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Raise an option parsing error using parser.error().
+
+Args:
+  parser: an OptionParser instance.
+  option: an Option instance.
+  msg: the error text.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a151f1f132d0e1ec4471ea9545188a9af}\label{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a151f1f132d0e1ec4471ea9545188a9af}} 
+\index{pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}!help\_@{help\_}}
+\index{help\_@{help\_}!pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}}
+\doxysubsubsection{\texorpdfstring{help\_}{help\_}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+cmdoptions.\+help\+\_\+}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  partial(}
+\DoxyCodeLine{2     Option,}
+\DoxyCodeLine{3     \textcolor{stringliteral}{'-\/h'}, \textcolor{stringliteral}{'-\/-\/help'},}
+\DoxyCodeLine{4     dest=\textcolor{stringliteral}{'help'},}
+\DoxyCodeLine{5     action=\textcolor{stringliteral}{'help'},}
+\DoxyCodeLine{6     help=\textcolor{stringliteral}{'Show help.'},}
+\DoxyCodeLine{7 )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a462e1629688e0f1c80a5a461fd7c13be}\label{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a462e1629688e0f1c80a5a461fd7c13be}} 
+\index{pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}!isolated\_mode@{isolated\_mode}}
+\index{isolated\_mode@{isolated\_mode}!pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}}
+\doxysubsubsection{\texorpdfstring{isolated\_mode}{isolated\_mode}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+cmdoptions.\+isolated\+\_\+mode}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  partial(}
+\DoxyCodeLine{2     Option,}
+\DoxyCodeLine{3     \textcolor{stringliteral}{"{}-\/-\/isolated"{}},}
+\DoxyCodeLine{4     dest=\textcolor{stringliteral}{"{}isolated\_mode"{}},}
+\DoxyCodeLine{5     action=\textcolor{stringliteral}{"{}store\_true"{}},}
+\DoxyCodeLine{6     default=\textcolor{keyword}{False},}
+\DoxyCodeLine{7     help=(}
+\DoxyCodeLine{8         \textcolor{stringliteral}{"{}Run pip in an isolated mode, ignoring environment variables and user "{}}}
+\DoxyCodeLine{9         \textcolor{stringliteral}{"{}configuration."{}}}
+\DoxyCodeLine{10     ),}
+\DoxyCodeLine{11 )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_aa269a26012b5124280cbac9082f4063d}\label{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_aa269a26012b5124280cbac9082f4063d}} 
+\index{pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}!log@{log}}
+\index{log@{log}!pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}}
+\doxysubsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+cmdoptions.\+log}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  partial(}
+\DoxyCodeLine{2     PipOption,}
+\DoxyCodeLine{3     \textcolor{stringliteral}{"{}-\/-\/log"{}}, \textcolor{stringliteral}{"{}-\/-\/log-\/file"{}}, \textcolor{stringliteral}{"{}-\/-\/local-\/log"{}},}
+\DoxyCodeLine{4     dest=\textcolor{stringliteral}{"{}log"{}},}
+\DoxyCodeLine{5     metavar=\textcolor{stringliteral}{"{}path"{}},}
+\DoxyCodeLine{6     type=\textcolor{stringliteral}{"{}path"{}},}
+\DoxyCodeLine{7     help=\textcolor{stringliteral}{"{}Path to a verbose appending log."{}}}
+\DoxyCodeLine{8 )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a806925ab10008ec62d410ebca06b99e3}\label{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a806925ab10008ec62d410ebca06b99e3}} 
+\index{pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}!no\_color@{no\_color}}
+\index{no\_color@{no\_color}!pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}}
+\doxysubsubsection{\texorpdfstring{no\_color}{no\_color}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+cmdoptions.\+no\+\_\+color}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  partial(}
+\DoxyCodeLine{2     Option,}
+\DoxyCodeLine{3     \textcolor{stringliteral}{'-\/-\/no-\/color'},}
+\DoxyCodeLine{4     dest=\textcolor{stringliteral}{'no\_color'},}
+\DoxyCodeLine{5     action=\textcolor{stringliteral}{'store\_true'},}
+\DoxyCodeLine{6     default=\textcolor{keyword}{False},}
+\DoxyCodeLine{7     help=\textcolor{stringliteral}{"{}Suppress colored output"{}},}
+\DoxyCodeLine{8 )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_ab6ddb14e4ac6780b7faf30a1524e6976}\label{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_ab6ddb14e4ac6780b7faf30a1524e6976}} 
+\index{pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}!progress\_bar@{progress\_bar}}
+\index{progress\_bar@{progress\_bar}!pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}}
+\doxysubsubsection{\texorpdfstring{progress\_bar}{progress\_bar}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+cmdoptions.\+progress\+\_\+bar}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  partial(}
+\DoxyCodeLine{2     Option,}
+\DoxyCodeLine{3     \textcolor{stringliteral}{'-\/-\/progress-\/bar'},}
+\DoxyCodeLine{4     dest=\textcolor{stringliteral}{'progress\_bar'},}
+\DoxyCodeLine{5     type=\textcolor{stringliteral}{'choice'},}
+\DoxyCodeLine{6     choices=list(BAR\_TYPES.keys()),}
+\DoxyCodeLine{7     default=\textcolor{stringliteral}{'on'},}
+\DoxyCodeLine{8     help=(}
+\DoxyCodeLine{9         \textcolor{stringliteral}{'Specify type of progress to be displayed ['} +}
+\DoxyCodeLine{10         \textcolor{stringliteral}{'|'}.join(BAR\_TYPES.keys()) + \textcolor{stringliteral}{'] (default: \%default)'}}
+\DoxyCodeLine{11     ),}
+\DoxyCodeLine{12 )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a6397f3a6fceda5828252d969f3f2d442}\label{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a6397f3a6fceda5828252d969f3f2d442}} 
+\index{pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}!quiet@{quiet}}
+\index{quiet@{quiet}!pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}}
+\doxysubsubsection{\texorpdfstring{quiet}{quiet}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+cmdoptions.\+quiet}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  partial(}
+\DoxyCodeLine{2     Option,}
+\DoxyCodeLine{3     \textcolor{stringliteral}{'-\/q'}, \textcolor{stringliteral}{'-\/-\/quiet'},}
+\DoxyCodeLine{4     dest=\textcolor{stringliteral}{'quiet'},}
+\DoxyCodeLine{5     action=\textcolor{stringliteral}{'count'},}
+\DoxyCodeLine{6     default=0,}
+\DoxyCodeLine{7     help=(}
+\DoxyCodeLine{8         \textcolor{stringliteral}{'Give less output. Option is additive, and can be used up to 3'}}
+\DoxyCodeLine{9         \textcolor{stringliteral}{' times (corresponding to WARNING, ERROR, and CRITICAL logging'}}
+\DoxyCodeLine{10         \textcolor{stringliteral}{' levels).'}}
+\DoxyCodeLine{11     ),}
+\DoxyCodeLine{12 )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a0b1f134477a22a7364e9cc891883abe3}\label{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a0b1f134477a22a7364e9cc891883abe3}} 
+\index{pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}!require\_virtualenv@{require\_virtualenv}}
+\index{require\_virtualenv@{require\_virtualenv}!pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}}
+\doxysubsubsection{\texorpdfstring{require\_virtualenv}{require\_virtualenv}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+cmdoptions.\+require\+\_\+virtualenv}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  partial(}
+\DoxyCodeLine{2     Option,}
+\DoxyCodeLine{3     \textcolor{comment}{\# Run only if inside a virtualenv, bail if not.}}
+\DoxyCodeLine{4     \textcolor{stringliteral}{'-\/-\/require-\/virtualenv'}, \textcolor{stringliteral}{'-\/-\/require-\/venv'},}
+\DoxyCodeLine{5     dest=\textcolor{stringliteral}{'require\_venv'},}
+\DoxyCodeLine{6     action=\textcolor{stringliteral}{'store\_true'},}
+\DoxyCodeLine{7     default=\textcolor{keyword}{False},}
+\DoxyCodeLine{8     help=SUPPRESS\_HELP}
+\DoxyCodeLine{9 )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a4a51e45bd64777d3eed64aeac50dee00}\label{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a4a51e45bd64777d3eed64aeac50dee00}} 
+\index{pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}!verbose@{verbose}}
+\index{verbose@{verbose}!pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}}
+\doxysubsubsection{\texorpdfstring{verbose}{verbose}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+cmdoptions.\+verbose}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  partial(}
+\DoxyCodeLine{2     Option,}
+\DoxyCodeLine{3     \textcolor{stringliteral}{'-\/v'}, \textcolor{stringliteral}{'-\/-\/verbose'},}
+\DoxyCodeLine{4     dest=\textcolor{stringliteral}{'verbose'},}
+\DoxyCodeLine{5     action=\textcolor{stringliteral}{'count'},}
+\DoxyCodeLine{6     default=0,}
+\DoxyCodeLine{7     help=\textcolor{stringliteral}{'Give more output. Option is additive, and can be used up to 3 times.'}}
+\DoxyCodeLine{8 )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a8518e1fd92af1f1e3356b898a8b336d2}\label{namespacepip_1_1__internal_1_1cli_1_1cmdoptions_a8518e1fd92af1f1e3356b898a8b336d2}} 
+\index{pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}!version@{version}}
+\index{version@{version}!pip.\_internal.cli.cmdoptions@{pip.\_internal.cli.cmdoptions}}
+\doxysubsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily pip.\+\_\+internal.\+cli.\+cmdoptions.\+version}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  partial(}
+\DoxyCodeLine{2     Option,}
+\DoxyCodeLine{3     \textcolor{stringliteral}{'-\/V'}, \textcolor{stringliteral}{'-\/-\/version'},}
+\DoxyCodeLine{4     dest=\textcolor{stringliteral}{'version'},}
+\DoxyCodeLine{5     action=\textcolor{stringliteral}{'store\_true'},}
+\DoxyCodeLine{6     help=\textcolor{stringliteral}{'Show version and exit.'},}
+\DoxyCodeLine{7 )}
+
+\end{DoxyCode}

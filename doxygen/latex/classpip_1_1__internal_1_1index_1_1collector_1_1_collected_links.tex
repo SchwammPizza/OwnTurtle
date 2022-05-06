@@ -1,0 +1,56 @@
+\hypertarget{classpip_1_1__internal_1_1index_1_1collector_1_1_collected_links}{}\doxysection{pip.\+\_\+internal.\+index.\+collector.\+Collected\+Links Class Reference}
+\label{classpip_1_1__internal_1_1index_1_1collector_1_1_collected_links}\index{pip.\_internal.index.collector.CollectedLinks@{pip.\_internal.index.collector.CollectedLinks}}
+Inheritance diagram for pip.\+\_\+internal.\+index.\+collector.\+Collected\+Links\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1index_1_1collector_1_1_collected_links}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1_collected_links_ad854d67814f41af84e6678d0837fc0ef}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, files, find\+\_\+links, project\+\_\+urls)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1collector_1_1_collected_links_ae8a09d2802db0e8fc0a3c8d699489fbe}\label{classpip_1_1__internal_1_1index_1_1collector_1_1_collected_links_ae8a09d2802db0e8fc0a3c8d699489fbe}} 
+{\bfseries files}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1collector_1_1_collected_links_ad38236c68d46904c48c133e4d0319651}\label{classpip_1_1__internal_1_1index_1_1collector_1_1_collected_links_ad38236c68d46904c48c133e4d0319651}} 
+{\bfseries find\+\_\+links}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1collector_1_1_collected_links_a7c4e60d9216a70e64dd5aac2bc521037}\label{classpip_1_1__internal_1_1index_1_1collector_1_1_collected_links_a7c4e60d9216a70e64dd5aac2bc521037}} 
+{\bfseries project\+\_\+urls}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Encapsulates the return value of a call to LinkCollector.collect_links().
+
+The return value includes both URLs to project pages containing package
+links, as well as individual package Link objects collected from other
+sources.
+
+This info is stored separately as:
+
+(1) links from the configured file locations,
+(2) links from the configured find_links, and
+(3) urls to HTML project pages, as described by the PEP 503 simple
+    repository API.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1collector_1_1_collected_links_ad854d67814f41af84e6678d0837fc0ef}\label{classpip_1_1__internal_1_1index_1_1collector_1_1_collected_links_ad854d67814f41af84e6678d0837fc0ef}} 
+\index{pip.\_internal.index.collector.CollectedLinks@{pip.\_internal.index.collector.CollectedLinks}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.index.collector.CollectedLinks@{pip.\_internal.index.collector.CollectedLinks}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+index.\+collector.\+Collected\+Links.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{files,  }\item[{}]{find\+\_\+links,  }\item[{}]{project\+\_\+urls }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param files: Links from file locations.
+:param find_links: Links from find_links.
+:param project_urls: URLs to HTML project pages, as described by
+    the PEP 503 simple repository API.
+\end{DoxyVerb}
+ 

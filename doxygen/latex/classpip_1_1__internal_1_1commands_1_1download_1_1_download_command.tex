@@ -1,0 +1,76 @@
+\hypertarget{classpip_1_1__internal_1_1commands_1_1download_1_1_download_command}{}\doxysection{pip.\+\_\+internal.\+commands.\+download.\+Download\+Command Class Reference}
+\label{classpip_1_1__internal_1_1commands_1_1download_1_1_download_command}\index{pip.\_internal.commands.download.DownloadCommand@{pip.\_internal.commands.download.DownloadCommand}}
+Inheritance diagram for pip.\+\_\+internal.\+commands.\+download.\+Download\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.912281cm]{classpip_1_1__internal_1_1commands_1_1download_1_1_download_command}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1download_1_1_download_command_a47da54359286bf97f1361e4ee96fdc56}{add\+\_\+options}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1download_1_1_download_command_a4992cef595bc4f38a1635e91a7557a54}{run}} (self, options, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1download_1_1_download_command_adb398540b2079323e732133b7b92e3ea}{usage}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Download packages from:
+
+- PyPI (and other indexes) using requirement specifiers.
+- VCS project urls.
+- Local project directories.
+- Local or remote source archives.
+
+pip also supports downloading from "requirements files", which provide
+an easy way to specify a whole environment to be downloaded.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1download_1_1_download_command_a47da54359286bf97f1361e4ee96fdc56}\label{classpip_1_1__internal_1_1commands_1_1download_1_1_download_command_a47da54359286bf97f1361e4ee96fdc56}} 
+\index{pip.\_internal.commands.download.DownloadCommand@{pip.\_internal.commands.download.DownloadCommand}!add\_options@{add\_options}}
+\index{add\_options@{add\_options}!pip.\_internal.commands.download.DownloadCommand@{pip.\_internal.commands.download.DownloadCommand}}
+\doxysubsubsection{\texorpdfstring{add\_options()}{add\_options()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+commands.\+download.\+Download\+Command.\+add\+\_\+options (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1download_1_1_download_command_a4992cef595bc4f38a1635e91a7557a54}\label{classpip_1_1__internal_1_1commands_1_1download_1_1_download_command_a4992cef595bc4f38a1635e91a7557a54}} 
+\index{pip.\_internal.commands.download.DownloadCommand@{pip.\_internal.commands.download.DownloadCommand}!run@{run}}
+\index{run@{run}!pip.\_internal.commands.download.DownloadCommand@{pip.\_internal.commands.download.DownloadCommand}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+commands.\+download.\+Download\+Command.\+run (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{options,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1download_1_1_download_command_adb398540b2079323e732133b7b92e3ea}\label{classpip_1_1__internal_1_1commands_1_1download_1_1_download_command_adb398540b2079323e732133b7b92e3ea}} 
+\index{pip.\_internal.commands.download.DownloadCommand@{pip.\_internal.commands.download.DownloadCommand}!usage@{usage}}
+\index{usage@{usage}!pip.\_internal.commands.download.DownloadCommand@{pip.\_internal.commands.download.DownloadCommand}}
+\doxysubsubsection{\texorpdfstring{usage}{usage}}
+{\footnotesize\ttfamily string pip.\+\_\+internal.\+commands.\+download.\+Download\+Command.\+usage\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{      \%prog [options] <requirement specifier> [package-\/index-\/options] ...}}
+\DoxyCodeLine{\textcolor{stringliteral}{      \%prog [options] -\/r <requirements file> [package-\/index-\/options] ...}}
+\DoxyCodeLine{\textcolor{stringliteral}{      \%prog [options] <vcs project url> ...}}
+\DoxyCodeLine{\textcolor{stringliteral}{      \%prog [options] <local project path> ...}}
+\DoxyCodeLine{\textcolor{stringliteral}{      \%prog [options] <archive url/path> ..."{}"{}"{}}}
+
+\end{DoxyCode}

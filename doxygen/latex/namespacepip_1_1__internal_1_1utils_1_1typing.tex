@@ -1,0 +1,45 @@
+\hypertarget{namespacepip_1_1__internal_1_1utils_1_1typing}{}\doxysection{pip.\+\_\+internal.\+utils.\+typing Namespace Reference}
+\label{namespacepip_1_1__internal_1_1utils_1_1typing}\index{pip.\_internal.utils.typing@{pip.\_internal.utils.typing}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1typing_ab37e3e9039b01929d8ac2bd74d7c37db}\label{namespacepip_1_1__internal_1_1utils_1_1typing_ab37e3e9039b01929d8ac2bd74d7c37db}} 
+def {\bfseries cast} (type\+\_\+, value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1typing_a9b1a175dbf74ad590359bbf4cb1ae809}\label{namespacepip_1_1__internal_1_1utils_1_1typing_a9b1a175dbf74ad590359bbf4cb1ae809}} 
+bool {\bfseries MYPY\+\_\+\+CHECK\+\_\+\+RUNNING} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}For neatly implementing static typing in pip.
+
+`mypy` - the static type analysis tool we use - uses the `typing` module, which
+provides core functionality fundamental to mypy's functioning.
+
+Generally, `typing` would be imported at runtime and used in that fashion -
+it acts as a no-op at runtime and does not have any run-time overhead by
+design.
+
+As it turns out, `typing` is not vendorable - it uses separate sources for
+Python 2/Python 3. Thus, this codebase can not expect it to be present.
+To work around this, mypy allows the typing import to be behind a False-y
+optional to prevent it from running at runtime and type-comments can be used
+to remove the need for the types to be accessible directly during runtime.
+
+This module provides the False-y guard in a nicely named fashion so that a
+curious maintainer can reach here to read this.
+
+In pip, all static-typing related imports should be guarded as follows:
+
+    from pip._internal.utils.typing import MYPY_CHECK_RUNNING
+
+    if MYPY_CHECK_RUNNING:
+        from typing import ...
+
+Ref: https://github.com/python/mypy/issues/3216
+\end{DoxyVerb}
+ 

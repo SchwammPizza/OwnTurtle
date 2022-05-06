@@ -1,0 +1,84 @@
+\hypertarget{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator}{}\doxysection{pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Candidate\+Evaluator Class Reference}
+\label{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator}\index{pip.\_internal.index.package\_finder.CandidateEvaluator@{pip.\_internal.index.package\_finder.CandidateEvaluator}}
+Inheritance diagram for pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Candidate\+Evaluator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator_a3ee3e605c543a8bb94615cac976bbc64}{create}} (cls, project\+\_\+name, target\+\_\+python=None, prefer\+\_\+binary=False, allow\+\_\+all\+\_\+prereleases=False, specifier=None, hashes=None)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator_aadcab9c2157f9cbff474edc6dee75f35}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, project\+\_\+name, supported\+\_\+tags, specifier, prefer\+\_\+binary=False, allow\+\_\+all\+\_\+prereleases=False, hashes=None)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator_ac8a09b11c011db75d380f76d568110dc}{get\+\_\+applicable\+\_\+candidates}} (self, candidates)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator_a81da266f81febc3411d82d02f26fc97a}{sort\+\_\+best\+\_\+candidate}} (self, candidates)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator_a9da6b116741c745e314e9ee2c45dbdf0}{compute\+\_\+best\+\_\+candidate}} (self, candidates)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Responsible for filtering and sorting candidates for installation based
+on what tags are valid.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator_aadcab9c2157f9cbff474edc6dee75f35}\label{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator_aadcab9c2157f9cbff474edc6dee75f35}} 
+\index{pip.\_internal.index.package\_finder.CandidateEvaluator@{pip.\_internal.index.package\_finder.CandidateEvaluator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.index.package\_finder.CandidateEvaluator@{pip.\_internal.index.package\_finder.CandidateEvaluator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Candidate\+Evaluator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{project\+\_\+name,  }\item[{}]{supported\+\_\+tags,  }\item[{}]{specifier,  }\item[{}]{prefer\+\_\+binary = {\ttfamily False},  }\item[{}]{allow\+\_\+all\+\_\+prereleases = {\ttfamily False},  }\item[{}]{hashes = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param supported_tags: The PEP 425 tags supported by the target
+    Python in order of preference (most preferred first).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator_a9da6b116741c745e314e9ee2c45dbdf0}\label{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator_a9da6b116741c745e314e9ee2c45dbdf0}} 
+\index{pip.\_internal.index.package\_finder.CandidateEvaluator@{pip.\_internal.index.package\_finder.CandidateEvaluator}!compute\_best\_candidate@{compute\_best\_candidate}}
+\index{compute\_best\_candidate@{compute\_best\_candidate}!pip.\_internal.index.package\_finder.CandidateEvaluator@{pip.\_internal.index.package\_finder.CandidateEvaluator}}
+\doxysubsubsection{\texorpdfstring{compute\_best\_candidate()}{compute\_best\_candidate()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Candidate\+Evaluator.\+compute\+\_\+best\+\_\+candidate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{candidates }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute and return a `BestCandidateResult` instance.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator_a3ee3e605c543a8bb94615cac976bbc64}\label{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator_a3ee3e605c543a8bb94615cac976bbc64}} 
+\index{pip.\_internal.index.package\_finder.CandidateEvaluator@{pip.\_internal.index.package\_finder.CandidateEvaluator}!create@{create}}
+\index{create@{create}!pip.\_internal.index.package\_finder.CandidateEvaluator@{pip.\_internal.index.package\_finder.CandidateEvaluator}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Candidate\+Evaluator.\+create (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{project\+\_\+name,  }\item[{}]{target\+\_\+python = {\ttfamily None},  }\item[{}]{prefer\+\_\+binary = {\ttfamily False},  }\item[{}]{allow\+\_\+all\+\_\+prereleases = {\ttfamily False},  }\item[{}]{specifier = {\ttfamily None},  }\item[{}]{hashes = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a CandidateEvaluator object.
+
+:param target_python: The target Python interpreter to use when
+    checking compatibility. If None (the default), a TargetPython
+    object will be constructed from the running Python.
+:param specifier: An optional object implementing `filter`
+    (e.g. `packaging.specifiers.SpecifierSet`) to filter applicable
+    versions.
+:param hashes: An optional collection of allowed hashes.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator_ac8a09b11c011db75d380f76d568110dc}\label{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator_ac8a09b11c011db75d380f76d568110dc}} 
+\index{pip.\_internal.index.package\_finder.CandidateEvaluator@{pip.\_internal.index.package\_finder.CandidateEvaluator}!get\_applicable\_candidates@{get\_applicable\_candidates}}
+\index{get\_applicable\_candidates@{get\_applicable\_candidates}!pip.\_internal.index.package\_finder.CandidateEvaluator@{pip.\_internal.index.package\_finder.CandidateEvaluator}}
+\doxysubsubsection{\texorpdfstring{get\_applicable\_candidates()}{get\_applicable\_candidates()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Candidate\+Evaluator.\+get\+\_\+applicable\+\_\+candidates (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{candidates }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the applicable candidates from a list of candidates.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator_a81da266f81febc3411d82d02f26fc97a}\label{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator_a81da266f81febc3411d82d02f26fc97a}} 
+\index{pip.\_internal.index.package\_finder.CandidateEvaluator@{pip.\_internal.index.package\_finder.CandidateEvaluator}!sort\_best\_candidate@{sort\_best\_candidate}}
+\index{sort\_best\_candidate@{sort\_best\_candidate}!pip.\_internal.index.package\_finder.CandidateEvaluator@{pip.\_internal.index.package\_finder.CandidateEvaluator}}
+\doxysubsubsection{\texorpdfstring{sort\_best\_candidate()}{sort\_best\_candidate()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Candidate\+Evaluator.\+sort\+\_\+best\+\_\+candidate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{candidates }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the best candidate per the instance's sort order, or None if
+no candidate is acceptable.
+\end{DoxyVerb}
+ 

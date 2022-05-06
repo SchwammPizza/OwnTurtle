@@ -1,0 +1,244 @@
+\hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file}{}\doxysection{pip.\+\_\+internal.\+req.\+req\+\_\+file Namespace Reference}
+\label{namespacepip_1_1__internal_1_1req_1_1req__file}\index{pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__file_1_1_option_parsing_error}{Option\+Parsing\+Error}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__file_1_1_parsed_line}{Parsed\+Line}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__file_1_1_parsed_requirement}{Parsed\+Requirement}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__file_1_1_requirements_file_parser}{Requirements\+File\+Parser}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__file_a26157dbab79dc73771f38f1eb08d29c8}{parse\+\_\+requirements}} (filename, session, finder=None, comes\+\_\+from=None, options=None, constraint=False)
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__file_a57d42ed2cf0522e59b921ccd16536c9b}{preprocess}} (content)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_a08eb89957cfc2e8ceaead212f682b756}\label{namespacepip_1_1__internal_1_1req_1_1req__file_a08eb89957cfc2e8ceaead212f682b756}} 
+def {\bfseries handle\+\_\+requirement\+\_\+line} (line, options=None)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_a54d25df51acbdd71432aadb2af1df991}\label{namespacepip_1_1__internal_1_1req_1_1req__file_a54d25df51acbdd71432aadb2af1df991}} 
+def {\bfseries handle\+\_\+option\+\_\+line} (opts, filename, lineno, finder=None, options=None, session=None)
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__file_a84c3d53ffb4cac1346b54ab540ef58be}{handle\+\_\+line}} (line, options=None, finder=None, session=None)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_ab28e7931f03ea251630e063377a33936}\label{namespacepip_1_1__internal_1_1req_1_1req__file_ab28e7931f03ea251630e063377a33936}} 
+def {\bfseries get\+\_\+line\+\_\+parser} (finder)
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__file_a4af0019abe61898b2e2556bfd9c103f9}{break\+\_\+args\+\_\+options}} (line)
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__file_ad877f09761f42a82cda8fe3630689b20}{build\+\_\+parser}} ()
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__file_ae12ba685b8f32a3b4ac48c2f2d54f843}{join\+\_\+lines}} (lines\+\_\+enum)
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__file_a015754515e5b13a4b933c8e91b59a41e}{ignore\+\_\+comments}} (lines\+\_\+enum)
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__file_a9dde537d4516cef95cabf43bb559c851}{expand\+\_\+env\+\_\+variables}} (lines\+\_\+enum)
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__file_a20371d1fb95ad99ab432e2ca6189d4e6}{get\+\_\+file\+\_\+content}} (url, session, comes\+\_\+from=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_a6bcd7f95031c74c3a0c6950f59b7ae2b}\label{namespacepip_1_1__internal_1_1req_1_1req__file_a6bcd7f95031c74c3a0c6950f59b7ae2b}} 
+{\bfseries Req\+File\+Lines} = Iterator\mbox{[}Tuple\mbox{[}int, Text\mbox{]}\mbox{]}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_aef579255ac99d908c14a7231cc5bb5a1}\label{namespacepip_1_1__internal_1_1req_1_1req__file_aef579255ac99d908c14a7231cc5bb5a1}} 
+{\bfseries Line\+Parser} = Callable\mbox{[}\mbox{[}Text\mbox{]}, Tuple\mbox{[}str, Values\mbox{]}\mbox{]}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_a07a6d7a4863b3e41652b385ec7f87d7b}\label{namespacepip_1_1__internal_1_1req_1_1req__file_a07a6d7a4863b3e41652b385ec7f87d7b}} 
+{\bfseries SCHEME\+\_\+\+RE} = re.\+compile(r\textquotesingle{}$^\wedge$(http$\vert$https$\vert$file)\+:\textquotesingle{}, re.\+I)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_ab54ff2bcd8ab7312fb2912154934eee0}\label{namespacepip_1_1__internal_1_1req_1_1req__file_ab54ff2bcd8ab7312fb2912154934eee0}} 
+{\bfseries COMMENT\+\_\+\+RE} = re.\+compile(r\textquotesingle{}($^\wedge$$\vert$\textbackslash{}s+)\#.$\ast$\$\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_a51f683b92d8d3ccf2663d3b7ac1210c6}\label{namespacepip_1_1__internal_1_1req_1_1req__file_a51f683b92d8d3ccf2663d3b7ac1210c6}} 
+{\bfseries ENV\+\_\+\+VAR\+\_\+\+RE} = re.\+compile(r\textquotesingle{}(?P$<$var$>$\textbackslash{}\$\textbackslash{}\{(?P$<$name$>$\mbox{[}A-\/Z0-\/9\+\_\+\mbox{]}+)\textbackslash{}\})\textquotesingle{})
+\item 
+list \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__file_ab97fd49b4c3dba7e12f2e838f67e4a11}{SUPPORTED\+\_\+\+OPTIONS}}
+\item 
+list \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__file_adf9fe333d32b76b8a202f81da460b1a3}{SUPPORTED\+\_\+\+OPTIONS\+\_\+\+REQ}}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_a689e26741255339d8e2d2e0b202a381e}\label{namespacepip_1_1__internal_1_1req_1_1req__file_a689e26741255339d8e2d2e0b202a381e}} 
+list {\bfseries SUPPORTED\+\_\+\+OPTIONS\+\_\+\+REQ\+\_\+\+DEST} = \mbox{[}str(o().dest) for o in SUPPORTED\+\_\+\+OPTIONS\+\_\+\+REQ\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Requirements file parsing
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_a4af0019abe61898b2e2556bfd9c103f9}\label{namespacepip_1_1__internal_1_1req_1_1req__file_a4af0019abe61898b2e2556bfd9c103f9}} 
+\index{pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}!break\_args\_options@{break\_args\_options}}
+\index{break\_args\_options@{break\_args\_options}!pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}}
+\doxysubsubsection{\texorpdfstring{break\_args\_options()}{break\_args\_options()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+req.\+req\+\_\+file.\+break\+\_\+args\+\_\+options (\begin{DoxyParamCaption}\item[{}]{line }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Break up the line into an args and options string.  We only want to shlex
+(and then optparse) the options, not the args.  args can contain markers
+which are corrupted by shlex.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_ad877f09761f42a82cda8fe3630689b20}\label{namespacepip_1_1__internal_1_1req_1_1req__file_ad877f09761f42a82cda8fe3630689b20}} 
+\index{pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}!build\_parser@{build\_parser}}
+\index{build\_parser@{build\_parser}!pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}}
+\doxysubsubsection{\texorpdfstring{build\_parser()}{build\_parser()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+req.\+req\+\_\+file.\+build\+\_\+parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a parser for parsing requirement lines
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_a9dde537d4516cef95cabf43bb559c851}\label{namespacepip_1_1__internal_1_1req_1_1req__file_a9dde537d4516cef95cabf43bb559c851}} 
+\index{pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}!expand\_env\_variables@{expand\_env\_variables}}
+\index{expand\_env\_variables@{expand\_env\_variables}!pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}}
+\doxysubsubsection{\texorpdfstring{expand\_env\_variables()}{expand\_env\_variables()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+req.\+req\+\_\+file.\+expand\+\_\+env\+\_\+variables (\begin{DoxyParamCaption}\item[{}]{lines\+\_\+enum }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Replace all environment variables that can be retrieved via `os.getenv`.
+
+The only allowed format for environment variables defined in the
+requirement file is `${MY_VARIABLE_1}` to ensure two things:
+
+1. Strings that contain a `$` aren't accidentally (partially) expanded.
+2. Ensure consistency across platforms for requirement files.
+
+These points are the result of a discussion on the `github pull
+request #3514 <https://github.com/pypa/pip/pull/3514>`_.
+
+Valid characters in variable names follow the `POSIX standard
+<http://pubs.opengroup.org/onlinepubs/9699919799/>`_ and are limited
+to uppercase letter, digits and the `_` (underscore).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_a20371d1fb95ad99ab432e2ca6189d4e6}\label{namespacepip_1_1__internal_1_1req_1_1req__file_a20371d1fb95ad99ab432e2ca6189d4e6}} 
+\index{pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}!get\_file\_content@{get\_file\_content}}
+\index{get\_file\_content@{get\_file\_content}!pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}}
+\doxysubsubsection{\texorpdfstring{get\_file\_content()}{get\_file\_content()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+req.\+req\+\_\+file.\+get\+\_\+file\+\_\+content (\begin{DoxyParamCaption}\item[{}]{url,  }\item[{}]{session,  }\item[{}]{comes\+\_\+from = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the content of a file; it may be a filename, file: URL, or
+http: URL.  Returns (location, content).  Content is unicode.
+Respects # -*- coding: declarations on the retrieved files.
+
+:param url:         File path or url.
+:param session:     PipSession instance.
+:param comes_from:  Origin description of requirements.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_a84c3d53ffb4cac1346b54ab540ef58be}\label{namespacepip_1_1__internal_1_1req_1_1req__file_a84c3d53ffb4cac1346b54ab540ef58be}} 
+\index{pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}!handle\_line@{handle\_line}}
+\index{handle\_line@{handle\_line}!pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}}
+\doxysubsubsection{\texorpdfstring{handle\_line()}{handle\_line()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+req.\+req\+\_\+file.\+handle\+\_\+line (\begin{DoxyParamCaption}\item[{}]{line,  }\item[{}]{options = {\ttfamily None},  }\item[{}]{finder = {\ttfamily None},  }\item[{}]{session = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handle a single parsed requirements line; This can result in
+creating/yielding requirements, or updating the finder.
+
+:param line:        The parsed line to be processed.
+:param options:     CLI options.
+:param finder:      The finder - updated by non-requirement lines.
+:param session:     The session - updated by non-requirement lines.
+
+Returns a ParsedRequirement object if the line is a requirement line,
+otherwise returns None.
+
+For lines that contain requirements, the only options that have an effect
+are from SUPPORTED_OPTIONS_REQ, and they are scoped to the
+requirement. Other options from SUPPORTED_OPTIONS may be present, but are
+ignored.
+
+For lines that do not contain requirements, the only options that have an
+effect are from SUPPORTED_OPTIONS. Options from SUPPORTED_OPTIONS_REQ may
+be present, but are ignored. These lines may contain multiple options
+(although our docs imply only one is supported), and all our parsed and
+affect the finder.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_a015754515e5b13a4b933c8e91b59a41e}\label{namespacepip_1_1__internal_1_1req_1_1req__file_a015754515e5b13a4b933c8e91b59a41e}} 
+\index{pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}!ignore\_comments@{ignore\_comments}}
+\index{ignore\_comments@{ignore\_comments}!pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}}
+\doxysubsubsection{\texorpdfstring{ignore\_comments()}{ignore\_comments()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+req.\+req\+\_\+file.\+ignore\+\_\+comments (\begin{DoxyParamCaption}\item[{}]{lines\+\_\+enum }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Strips comments and filter empty lines.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_ae12ba685b8f32a3b4ac48c2f2d54f843}\label{namespacepip_1_1__internal_1_1req_1_1req__file_ae12ba685b8f32a3b4ac48c2f2d54f843}} 
+\index{pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}!join\_lines@{join\_lines}}
+\index{join\_lines@{join\_lines}!pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}}
+\doxysubsubsection{\texorpdfstring{join\_lines()}{join\_lines()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+req.\+req\+\_\+file.\+join\+\_\+lines (\begin{DoxyParamCaption}\item[{}]{lines\+\_\+enum }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Joins a line ending in '\' with the previous line (except when following
+comments).  The joined line takes on the index of the first line.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_a26157dbab79dc73771f38f1eb08d29c8}\label{namespacepip_1_1__internal_1_1req_1_1req__file_a26157dbab79dc73771f38f1eb08d29c8}} 
+\index{pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}!parse\_requirements@{parse\_requirements}}
+\index{parse\_requirements@{parse\_requirements}!pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}}
+\doxysubsubsection{\texorpdfstring{parse\_requirements()}{parse\_requirements()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+req.\+req\+\_\+file.\+parse\+\_\+requirements (\begin{DoxyParamCaption}\item[{}]{filename,  }\item[{}]{session,  }\item[{}]{finder = {\ttfamily None},  }\item[{}]{comes\+\_\+from = {\ttfamily None},  }\item[{}]{options = {\ttfamily None},  }\item[{}]{constraint = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse a requirements file and yield ParsedRequirement instances.
+
+:param filename:    Path or url of requirements file.
+:param session:     PipSession instance.
+:param finder:      Instance of pip.index.PackageFinder.
+:param comes_from:  Origin description of requirements.
+:param options:     cli options.
+:param constraint:  If true, parsing a constraint file rather than
+    requirements file.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_a57d42ed2cf0522e59b921ccd16536c9b}\label{namespacepip_1_1__internal_1_1req_1_1req__file_a57d42ed2cf0522e59b921ccd16536c9b}} 
+\index{pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}!preprocess@{preprocess}}
+\index{preprocess@{preprocess}!pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}}
+\doxysubsubsection{\texorpdfstring{preprocess()}{preprocess()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+req.\+req\+\_\+file.\+preprocess (\begin{DoxyParamCaption}\item[{}]{content }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Split, filter, and join lines, and return a line iterator
+
+:param content: the content of the requirements file
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_ab97fd49b4c3dba7e12f2e838f67e4a11}\label{namespacepip_1_1__internal_1_1req_1_1req__file_ab97fd49b4c3dba7e12f2e838f67e4a11}} 
+\index{pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}!SUPPORTED\_OPTIONS@{SUPPORTED\_OPTIONS}}
+\index{SUPPORTED\_OPTIONS@{SUPPORTED\_OPTIONS}!pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}}
+\doxysubsubsection{\texorpdfstring{SUPPORTED\_OPTIONS}{SUPPORTED\_OPTIONS}}
+{\footnotesize\ttfamily list pip.\+\_\+internal.\+req.\+req\+\_\+file.\+SUPPORTED\+\_\+\+OPTIONS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  [}
+\DoxyCodeLine{2     cmdoptions.index\_url,}
+\DoxyCodeLine{3     cmdoptions.extra\_index\_url,}
+\DoxyCodeLine{4     cmdoptions.no\_index,}
+\DoxyCodeLine{5     cmdoptions.constraints,}
+\DoxyCodeLine{6     cmdoptions.requirements,}
+\DoxyCodeLine{7     cmdoptions.editable,}
+\DoxyCodeLine{8     cmdoptions.find\_links,}
+\DoxyCodeLine{9     cmdoptions.no\_binary,}
+\DoxyCodeLine{10     cmdoptions.only\_binary,}
+\DoxyCodeLine{11     cmdoptions.prefer\_binary,}
+\DoxyCodeLine{12     cmdoptions.require\_hashes,}
+\DoxyCodeLine{13     cmdoptions.pre,}
+\DoxyCodeLine{14     cmdoptions.trusted\_host,}
+\DoxyCodeLine{15     cmdoptions.use\_new\_feature,}
+\DoxyCodeLine{16 ]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1req__file_adf9fe333d32b76b8a202f81da460b1a3}\label{namespacepip_1_1__internal_1_1req_1_1req__file_adf9fe333d32b76b8a202f81da460b1a3}} 
+\index{pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}!SUPPORTED\_OPTIONS\_REQ@{SUPPORTED\_OPTIONS\_REQ}}
+\index{SUPPORTED\_OPTIONS\_REQ@{SUPPORTED\_OPTIONS\_REQ}!pip.\_internal.req.req\_file@{pip.\_internal.req.req\_file}}
+\doxysubsubsection{\texorpdfstring{SUPPORTED\_OPTIONS\_REQ}{SUPPORTED\_OPTIONS\_REQ}}
+{\footnotesize\ttfamily list pip.\+\_\+internal.\+req.\+req\+\_\+file.\+SUPPORTED\+\_\+\+OPTIONS\+\_\+\+REQ}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  [}
+\DoxyCodeLine{2     cmdoptions.install\_options,}
+\DoxyCodeLine{3     cmdoptions.global\_options,}
+\DoxyCodeLine{4     cmdoptions.hash,}
+\DoxyCodeLine{5 ]}
+
+\end{DoxyCode}

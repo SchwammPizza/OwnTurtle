@@ -1,0 +1,68 @@
+\hypertarget{classpip_1_1__internal_1_1index_1_1package__finder_1_1_link_evaluator}{}\doxysection{pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Link\+Evaluator Class Reference}
+\label{classpip_1_1__internal_1_1index_1_1package__finder_1_1_link_evaluator}\index{pip.\_internal.index.package\_finder.LinkEvaluator@{pip.\_internal.index.package\_finder.LinkEvaluator}}
+Inheritance diagram for pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Link\+Evaluator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1index_1_1package__finder_1_1_link_evaluator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_link_evaluator_a95f0f84335e2ae3a4ca698ac0903d351}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, project\+\_\+name, canonical\+\_\+name, formats, target\+\_\+python, allow\+\_\+yanked, ignore\+\_\+requires\+\_\+python=None)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_link_evaluator_a12e4c644c8cfedf2ce00637726642c26}{evaluate\+\_\+link}} (self, link)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1package__finder_1_1_link_evaluator_a863c5807bac2d54e03b1269df84ef341}\label{classpip_1_1__internal_1_1index_1_1package__finder_1_1_link_evaluator_a863c5807bac2d54e03b1269df84ef341}} 
+{\bfseries project\+\_\+name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Responsible for evaluating links for a particular project.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1package__finder_1_1_link_evaluator_a95f0f84335e2ae3a4ca698ac0903d351}\label{classpip_1_1__internal_1_1index_1_1package__finder_1_1_link_evaluator_a95f0f84335e2ae3a4ca698ac0903d351}} 
+\index{pip.\_internal.index.package\_finder.LinkEvaluator@{pip.\_internal.index.package\_finder.LinkEvaluator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.index.package\_finder.LinkEvaluator@{pip.\_internal.index.package\_finder.LinkEvaluator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Link\+Evaluator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{project\+\_\+name,  }\item[{}]{canonical\+\_\+name,  }\item[{}]{formats,  }\item[{}]{target\+\_\+python,  }\item[{}]{allow\+\_\+yanked,  }\item[{}]{ignore\+\_\+requires\+\_\+python = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param project_name: The user supplied package name.
+:param canonical_name: The canonical package name.
+:param formats: The formats allowed for this package. Should be a set
+    with 'binary' or 'source' or both in it.
+:param target_python: The target Python interpreter to use when
+    evaluating link compatibility. This is used, for example, to
+    check wheel compatibility, as well as when checking the Python
+    version, e.g. the Python version embedded in a link filename
+    (or egg fragment) and against an HTML link's optional PEP 503
+    "data-requires-python" attribute.
+:param allow_yanked: Whether files marked as yanked (in the sense
+    of PEP 592) are permitted to be candidates for install.
+:param ignore_requires_python: Whether to ignore incompatible
+    PEP 503 "data-requires-python" values in HTML links. Defaults
+    to False.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1package__finder_1_1_link_evaluator_a12e4c644c8cfedf2ce00637726642c26}\label{classpip_1_1__internal_1_1index_1_1package__finder_1_1_link_evaluator_a12e4c644c8cfedf2ce00637726642c26}} 
+\index{pip.\_internal.index.package\_finder.LinkEvaluator@{pip.\_internal.index.package\_finder.LinkEvaluator}!evaluate\_link@{evaluate\_link}}
+\index{evaluate\_link@{evaluate\_link}!pip.\_internal.index.package\_finder.LinkEvaluator@{pip.\_internal.index.package\_finder.LinkEvaluator}}
+\doxysubsubsection{\texorpdfstring{evaluate\_link()}{evaluate\_link()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Link\+Evaluator.\+evaluate\+\_\+link (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{link }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine whether a link is a candidate for installation.
+
+:return: A tuple (is_candidate, result), where `result` is (1) a
+    version string if `is_candidate` is True, and (2) if
+    `is_candidate` is False, an optional string to log the reason
+    the link fails to qualify.
+\end{DoxyVerb}
+ 

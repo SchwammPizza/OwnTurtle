@@ -1,0 +1,51 @@
+\hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser}{}\doxysection{pip.\+\_\+internal.\+cli.\+parser.\+Config\+Option\+Parser Class Reference}
+\label{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser}\index{pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}}
+Inheritance diagram for pip.\+\_\+internal.\+cli.\+parser.\+Config\+Option\+Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser_ad428ec09eabdedf45bd48240dd313b3c}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser_ad428ec09eabdedf45bd48240dd313b3c}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser_ab83de0d0c33c68e5274e51cfb3deeaeb}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser_ab83de0d0c33c68e5274e51cfb3deeaeb}} 
+def {\bfseries check\+\_\+default} (self, option, key, val)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser_a21c21f557924b6bc7d42ac53dd681214}{get\+\_\+default\+\_\+values}} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser_a117b2b9285713ae8dada4e122adcfd83}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser_a117b2b9285713ae8dada4e122adcfd83}} 
+def {\bfseries error} (self, msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser_a50077696ec4a329b94ecd6d6415c4d3b}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser_a50077696ec4a329b94ecd6d6415c4d3b}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser_a1cf5a282cc6116237cbf18d56470e7d7}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser_a1cf5a282cc6116237cbf18d56470e7d7}} 
+{\bfseries config}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser_ace7a0a42524f9997e642af86efc487bf}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser_ace7a0a42524f9997e642af86efc487bf}} 
+{\bfseries values}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Custom option parser which updates its defaults by checking the
+configuration files and environmental variables\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser_a21c21f557924b6bc7d42ac53dd681214}\label{classpip_1_1__internal_1_1cli_1_1parser_1_1_config_option_parser_a21c21f557924b6bc7d42ac53dd681214}} 
+\index{pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}!get\_default\_values@{get\_default\_values}}
+\index{get\_default\_values@{get\_default\_values}!pip.\_internal.cli.parser.ConfigOptionParser@{pip.\_internal.cli.parser.ConfigOptionParser}}
+\doxysubsubsection{\texorpdfstring{get\_default\_values()}{get\_default\_values()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+cli.\+parser.\+Config\+Option\+Parser.\+get\+\_\+default\+\_\+values (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Overriding to make updating the defaults after instantiation of
+the option parser possible, _update_defaults() does the dirty work.\end{DoxyVerb}
+ 

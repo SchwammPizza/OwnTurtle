@@ -1,0 +1,35 @@
+\hypertarget{namespacepip_1_1__internal_1_1network_1_1lazy__wheel}{}\doxysection{pip.\+\_\+internal.\+network.\+lazy\+\_\+wheel Namespace Reference}
+\label{namespacepip_1_1__internal_1_1network_1_1lazy__wheel}\index{pip.\_internal.network.lazy\_wheel@{pip.\_internal.network.lazy\_wheel}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_h_t_t_p_range_request_unsupported}{HTTPRange\+Request\+Unsupported}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p}{Lazy\+Zip\+Over\+HTTP}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1network_1_1lazy__wheel_a35a4bbb63205e75fdf71a52a2f0af374}{dist\+\_\+from\+\_\+wheel\+\_\+url}} (name, url, session)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Lazy ZIP over HTTP\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1network_1_1lazy__wheel_a35a4bbb63205e75fdf71a52a2f0af374}\label{namespacepip_1_1__internal_1_1network_1_1lazy__wheel_a35a4bbb63205e75fdf71a52a2f0af374}} 
+\index{pip.\_internal.network.lazy\_wheel@{pip.\_internal.network.lazy\_wheel}!dist\_from\_wheel\_url@{dist\_from\_wheel\_url}}
+\index{dist\_from\_wheel\_url@{dist\_from\_wheel\_url}!pip.\_internal.network.lazy\_wheel@{pip.\_internal.network.lazy\_wheel}}
+\doxysubsubsection{\texorpdfstring{dist\_from\_wheel\_url()}{dist\_from\_wheel\_url()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+network.\+lazy\+\_\+wheel.\+dist\+\_\+from\+\_\+wheel\+\_\+url (\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{url,  }\item[{}]{session }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a pkg_resources.Distribution from the given wheel URL.
+
+This uses HTTP range requests to only fetch the potion of the wheel
+containing metadata, just enough for the object to be constructed.
+If such requests are not supported, HTTPRangeRequestUnsupported
+is raised.
+\end{DoxyVerb}
+ 

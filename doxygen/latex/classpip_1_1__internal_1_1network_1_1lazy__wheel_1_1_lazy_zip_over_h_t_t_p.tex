@@ -1,0 +1,150 @@
+\hypertarget{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p}{}\doxysection{pip.\+\_\+internal.\+network.\+lazy\+\_\+wheel.\+Lazy\+Zip\+Over\+HTTP Class Reference}
+\label{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p}\index{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}}
+Inheritance diagram for pip.\+\_\+internal.\+network.\+lazy\+\_\+wheel.\+Lazy\+Zip\+Over\+HTTP\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a8d522c9bfc70df01c3439c43a4669492}\label{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a8d522c9bfc70df01c3439c43a4669492}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, url, session, chunk\+\_\+size=CONTENT\+\_\+\+CHUNK\+\_\+\+SIZE)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a154eeb7d48f999e0588ffcdda39ff54c}{mode}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a31eea23b50360a3d64d5330d6314d390}{name}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a1c29ae1ccc009bcbd35bf389523c4c9e}{seekable}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a6fa004fecbd8451f6abe9977b21afcd8}{close}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a79c552bfacdf6de6826b58ae6b555720}{closed}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a077c4b5f9a3b7df8cc9a0c14d61d92c3}{read}} (self, size=-\/1)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a4bf18e97f3a3fa521f844803785c4c91}{readable}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a591997dbb7d8c2e19a71397d15cd09ae}{seek}} (self, offset, whence=0)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_af9b9d696f45b39cc4453282f80d1e825}{tell}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a50ab681179939a2cd8088f915ae6e316}{truncate}} (self, size=None)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_ae7fb692fbe63c970909f32ed9a146a16}{writable}} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a8128c79848030828bbb0efee9c0a6a87}\label{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a8128c79848030828bbb0efee9c0a6a87}} 
+def {\bfseries \+\_\+\+\_\+enter\+\_\+\+\_\+} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a490828dc78d782226096e7767b38716d}\label{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a490828dc78d782226096e7767b38716d}} 
+def {\bfseries \+\_\+\+\_\+exit\+\_\+\+\_\+} (self, $\ast$exc)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}File-like object mapped to a ZIP file over HTTP.
+
+This uses HTTP range requests to lazily fetch the file's content,
+which is supposed to be fed to ZipFile.  If such requests are not
+supported by the server, raise HTTPRangeRequestUnsupported
+during initialization.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a6fa004fecbd8451f6abe9977b21afcd8}\label{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a6fa004fecbd8451f6abe9977b21afcd8}} 
+\index{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}!close@{close}}
+\index{close@{close}!pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+network.\+lazy\+\_\+wheel.\+Lazy\+Zip\+Over\+HTTP.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Close the file.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a79c552bfacdf6de6826b58ae6b555720}\label{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a79c552bfacdf6de6826b58ae6b555720}} 
+\index{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}!closed@{closed}}
+\index{closed@{closed}!pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}}
+\doxysubsubsection{\texorpdfstring{closed()}{closed()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+network.\+lazy\+\_\+wheel.\+Lazy\+Zip\+Over\+HTTP.\+closed (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether the file is closed.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a154eeb7d48f999e0588ffcdda39ff54c}\label{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a154eeb7d48f999e0588ffcdda39ff54c}} 
+\index{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}!mode@{mode}}
+\index{mode@{mode}!pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}}
+\doxysubsubsection{\texorpdfstring{mode()}{mode()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+network.\+lazy\+\_\+wheel.\+Lazy\+Zip\+Over\+HTTP.\+mode (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Opening mode, which is always rb.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a31eea23b50360a3d64d5330d6314d390}\label{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a31eea23b50360a3d64d5330d6314d390}} 
+\index{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}!name@{name}}
+\index{name@{name}!pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+network.\+lazy\+\_\+wheel.\+Lazy\+Zip\+Over\+HTTP.\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Path to the underlying file.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a077c4b5f9a3b7df8cc9a0c14d61d92c3}\label{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a077c4b5f9a3b7df8cc9a0c14d61d92c3}} 
+\index{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}!read@{read}}
+\index{read@{read}!pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+network.\+lazy\+\_\+wheel.\+Lazy\+Zip\+Over\+HTTP.\+read (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{size = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read up to size bytes from the object and return them.
+
+As a convenience, if size is unspecified or -1,
+all bytes until EOF are returned.  Fewer than
+size bytes may be returned if EOF is reached.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a4bf18e97f3a3fa521f844803785c4c91}\label{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a4bf18e97f3a3fa521f844803785c4c91}} 
+\index{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}!readable@{readable}}
+\index{readable@{readable}!pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}}
+\doxysubsubsection{\texorpdfstring{readable()}{readable()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+network.\+lazy\+\_\+wheel.\+Lazy\+Zip\+Over\+HTTP.\+readable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether the file is readable, which is True.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a591997dbb7d8c2e19a71397d15cd09ae}\label{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a591997dbb7d8c2e19a71397d15cd09ae}} 
+\index{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}!seek@{seek}}
+\index{seek@{seek}!pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}}
+\doxysubsubsection{\texorpdfstring{seek()}{seek()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+network.\+lazy\+\_\+wheel.\+Lazy\+Zip\+Over\+HTTP.\+seek (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{offset,  }\item[{}]{whence = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Change stream position and return the new absolute position.
+
+Seek to offset relative position indicated by whence:
+* 0: Start of stream (the default).  pos should be >= 0;
+* 1: Current position - pos may be negative;
+* 2: End of stream - pos usually negative.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a1c29ae1ccc009bcbd35bf389523c4c9e}\label{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a1c29ae1ccc009bcbd35bf389523c4c9e}} 
+\index{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}!seekable@{seekable}}
+\index{seekable@{seekable}!pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}}
+\doxysubsubsection{\texorpdfstring{seekable()}{seekable()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+network.\+lazy\+\_\+wheel.\+Lazy\+Zip\+Over\+HTTP.\+seekable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return whether random access is supported, which is True.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_af9b9d696f45b39cc4453282f80d1e825}\label{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_af9b9d696f45b39cc4453282f80d1e825}} 
+\index{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}!tell@{tell}}
+\index{tell@{tell}!pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}}
+\doxysubsubsection{\texorpdfstring{tell()}{tell()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+network.\+lazy\+\_\+wheel.\+Lazy\+Zip\+Over\+HTTP.\+tell (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the current possition.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a50ab681179939a2cd8088f915ae6e316}\label{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_a50ab681179939a2cd8088f915ae6e316}} 
+\index{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}!truncate@{truncate}}
+\index{truncate@{truncate}!pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}}
+\doxysubsubsection{\texorpdfstring{truncate()}{truncate()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+network.\+lazy\+\_\+wheel.\+Lazy\+Zip\+Over\+HTTP.\+truncate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{size = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resize the stream to the given size in bytes.
+
+If size is unspecified resize to the current position.
+The current stream position isn't changed.
+
+Return the new file size.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_ae7fb692fbe63c970909f32ed9a146a16}\label{classpip_1_1__internal_1_1network_1_1lazy__wheel_1_1_lazy_zip_over_h_t_t_p_ae7fb692fbe63c970909f32ed9a146a16}} 
+\index{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}!writable@{writable}}
+\index{writable@{writable}!pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP@{pip.\_internal.network.lazy\_wheel.LazyZipOverHTTP}}
+\doxysubsubsection{\texorpdfstring{writable()}{writable()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+network.\+lazy\+\_\+wheel.\+Lazy\+Zip\+Over\+HTTP.\+writable (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return False.\end{DoxyVerb}
+ 

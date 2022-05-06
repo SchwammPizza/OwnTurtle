@@ -1,0 +1,67 @@
+\hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory}{}\doxysection{pip.\+\_\+internal.\+resolution.\+resolvelib.\+factory.\+Factory Class Reference}
+\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory}\index{pip.\_internal.resolution.resolvelib.factory.Factory@{pip.\_internal.resolution.resolvelib.factory.Factory}}
+Inheritance diagram for pip.\+\_\+internal.\+resolution.\+resolvelib.\+factory.\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a5c8357a1436ec3ba455c5676d5aae49d}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a5c8357a1436ec3ba455c5676d5aae49d}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, finder, preparer, make\+\_\+install\+\_\+req, wheel\+\_\+cache, use\+\_\+user\+\_\+site, force\+\_\+reinstall, ignore\+\_\+installed, ignore\+\_\+requires\+\_\+python, py\+\_\+version\+\_\+info=None, lazy\+\_\+wheel=False)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a2e11f9ac49d160f25b407ae93e2eb0a5}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a2e11f9ac49d160f25b407ae93e2eb0a5}} 
+def {\bfseries force\+\_\+reinstall} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a267a0668a11be24b806ae46d85187118}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a267a0668a11be24b806ae46d85187118}} 
+def {\bfseries find\+\_\+candidates} (self, requirements, constraint)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_abef0e5522369a94d28dde5d0f055d07f}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_abef0e5522369a94d28dde5d0f055d07f}} 
+def {\bfseries make\+\_\+requirement\+\_\+from\+\_\+install\+\_\+req} (self, ireq, requested\+\_\+extras)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a509aa47d2655ae8ed10f5accb5eebc7c}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a509aa47d2655ae8ed10f5accb5eebc7c}} 
+def {\bfseries make\+\_\+requirement\+\_\+from\+\_\+candidate} (self, candidate)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a8b78d13a29fb3a75abf954de12a2f9c1}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a8b78d13a29fb3a75abf954de12a2f9c1}} 
+def {\bfseries make\+\_\+requirement\+\_\+from\+\_\+spec} (self, specifier, comes\+\_\+from, requested\+\_\+extras=())
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_aa9eb074a239eae5bc35c76109e16c3f0}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_aa9eb074a239eae5bc35c76109e16c3f0}} 
+def {\bfseries make\+\_\+requires\+\_\+python\+\_\+requirement} (self, specifier)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a77afd551b75bb736c558265dd63b4e64}{get\+\_\+wheel\+\_\+cache\+\_\+entry}} (self, link, name)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a04d4ea3682e6ee177284224d6181e11a}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a04d4ea3682e6ee177284224d6181e11a}} 
+def {\bfseries get\+\_\+dist\+\_\+to\+\_\+uninstall} (self, candidate)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a5f132831901db9dd72280b603a8a9f2f}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a5f132831901db9dd72280b603a8a9f2f}} 
+def {\bfseries get\+\_\+installation\+\_\+error} (self, e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a19004f4087d32ba4dd2ad969281ae7d5}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a19004f4087d32ba4dd2ad969281ae7d5}} 
+{\bfseries preparer}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a1e39d0da311ec40608d53a21304447f1}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a1e39d0da311ec40608d53a21304447f1}} 
+{\bfseries use\+\_\+lazy\+\_\+wheel}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a77afd551b75bb736c558265dd63b4e64}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1factory_1_1_factory_a77afd551b75bb736c558265dd63b4e64}} 
+\index{pip.\_internal.resolution.resolvelib.factory.Factory@{pip.\_internal.resolution.resolvelib.factory.Factory}!get\_wheel\_cache\_entry@{get\_wheel\_cache\_entry}}
+\index{get\_wheel\_cache\_entry@{get\_wheel\_cache\_entry}!pip.\_internal.resolution.resolvelib.factory.Factory@{pip.\_internal.resolution.resolvelib.factory.Factory}}
+\doxysubsubsection{\texorpdfstring{get\_wheel\_cache\_entry()}{get\_wheel\_cache\_entry()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+factory.\+Factory.\+get\+\_\+wheel\+\_\+cache\+\_\+entry (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{link,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Look up the link in the wheel cache.
+
+If ``preparer.require_hashes`` is True, don't use the wheel cache,
+because cached wheels, always built locally, have different hashes
+than the files downloaded from the index server and thus throw false
+hash mismatches. Furthermore, cached wheels at present have
+nondeterministic contents due to file modification times.
+\end{DoxyVerb}
+ 

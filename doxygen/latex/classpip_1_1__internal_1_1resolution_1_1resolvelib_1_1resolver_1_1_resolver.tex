@@ -1,0 +1,64 @@
+\hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver}{}\doxysection{pip.\+\_\+internal.\+resolution.\+resolvelib.\+resolver.\+Resolver Class Reference}
+\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver}\index{pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}}
+Inheritance diagram for pip.\+\_\+internal.\+resolution.\+resolvelib.\+resolver.\+Resolver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_ae54889306342017fe40d802106e0f750}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_ae54889306342017fe40d802106e0f750}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, preparer, finder, wheel\+\_\+cache, make\+\_\+install\+\_\+req, use\+\_\+user\+\_\+site, ignore\+\_\+dependencies, ignore\+\_\+installed, ignore\+\_\+requires\+\_\+python, force\+\_\+reinstall, upgrade\+\_\+strategy, py\+\_\+version\+\_\+info=None, lazy\+\_\+wheel=False)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a4791860f8316347d991f708879e9b911}{resolve}} (self, root\+\_\+reqs, check\+\_\+supported\+\_\+wheels)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a3d2a469d152eea336c5cfb966dba05c0}{get\+\_\+installation\+\_\+order}} (self, req\+\_\+set)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_ade2b4bb013634d1a3f395bbd50c4652d}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_ade2b4bb013634d1a3f395bbd50c4652d}} 
+{\bfseries factory}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a91d554093f7b1def080c6a91cf7772d1}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a91d554093f7b1def080c6a91cf7772d1}} 
+{\bfseries ignore\+\_\+dependencies}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a5f96ca89dd2817dae1f9cead748c0d5d}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a5f96ca89dd2817dae1f9cead748c0d5d}} 
+{\bfseries upgrade\+\_\+strategy}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a3d2a469d152eea336c5cfb966dba05c0}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a3d2a469d152eea336c5cfb966dba05c0}} 
+\index{pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}!get\_installation\_order@{get\_installation\_order}}
+\index{get\_installation\_order@{get\_installation\_order}!pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}}
+\doxysubsubsection{\texorpdfstring{get\_installation\_order()}{get\_installation\_order()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+resolver.\+Resolver.\+get\+\_\+installation\+\_\+order (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{req\+\_\+set }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get order for installation of requirements in RequirementSet.
+
+The returned list contains a requirement before another that depends on
+it. This helps ensure that the environment is kept consistent as they
+get installed one-by-one.
+
+The current implementation creates a topological ordering of the
+dependency graph, while breaking any cycles in the graph at arbitrary
+points. We make no guarantees about where the cycle would be broken,
+other than they would be broken.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1base_1_1_base_resolver}{pip.\+\_\+internal.\+resolution.\+base.\+Base\+Resolver}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a4791860f8316347d991f708879e9b911}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a4791860f8316347d991f708879e9b911}} 
+\index{pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}!resolve@{resolve}}
+\index{resolve@{resolve}!pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+resolution.\+resolvelib.\+resolver.\+Resolver.\+resolve (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{root\+\_\+reqs,  }\item[{}]{check\+\_\+supported\+\_\+wheels }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1base_1_1_base_resolver}{pip.\+\_\+internal.\+resolution.\+base.\+Base\+Resolver}}.
+

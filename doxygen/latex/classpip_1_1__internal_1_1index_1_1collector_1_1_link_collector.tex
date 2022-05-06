@@ -1,0 +1,72 @@
+\hypertarget{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector}{}\doxysection{pip.\+\_\+internal.\+index.\+collector.\+Link\+Collector Class Reference}
+\label{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector}\index{pip.\_internal.index.collector.LinkCollector@{pip.\_internal.index.collector.LinkCollector}}
+Inheritance diagram for pip.\+\_\+internal.\+index.\+collector.\+Link\+Collector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_a68103e6e4667b0251a77c2eb90722847}\label{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_a68103e6e4667b0251a77c2eb90722847}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, session, search\+\_\+scope)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_af92d2f349c358004bde36b19230b7985}{create}} (cls, session, options, suppress\+\_\+no\+\_\+index=False)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_a20a332f936cb9aa4fb7419f2d03fde4d}\label{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_a20a332f936cb9aa4fb7419f2d03fde4d}} 
+def {\bfseries find\+\_\+links} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_add011fc2e36cd20b4e9fb30ea262259a}{fetch\+\_\+page}} (self, location)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_a913587d03e264b64cada070272d6343e}{collect\+\_\+links}} (self, project\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_a88b69ba28b46c6d958a0c2833f6c0fbe}\label{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_a88b69ba28b46c6d958a0c2833f6c0fbe}} 
+{\bfseries search\+\_\+scope}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_aec81e6d9b133b756c0ac7b9293b2951b}\label{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_aec81e6d9b133b756c0ac7b9293b2951b}} 
+{\bfseries session}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Responsible for collecting Link objects from all configured locations,
+making network requests as needed.
+
+The class's main method is its collect_links() method.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_a913587d03e264b64cada070272d6343e}\label{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_a913587d03e264b64cada070272d6343e}} 
+\index{pip.\_internal.index.collector.LinkCollector@{pip.\_internal.index.collector.LinkCollector}!collect\_links@{collect\_links}}
+\index{collect\_links@{collect\_links}!pip.\_internal.index.collector.LinkCollector@{pip.\_internal.index.collector.LinkCollector}}
+\doxysubsubsection{\texorpdfstring{collect\_links()}{collect\_links()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+index.\+collector.\+Link\+Collector.\+collect\+\_\+links (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{project\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Find all available links for the given project name.
+
+:return: All the Link objects (unfiltered), as a CollectedLinks object.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_af92d2f349c358004bde36b19230b7985}\label{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_af92d2f349c358004bde36b19230b7985}} 
+\index{pip.\_internal.index.collector.LinkCollector@{pip.\_internal.index.collector.LinkCollector}!create@{create}}
+\index{create@{create}!pip.\_internal.index.collector.LinkCollector@{pip.\_internal.index.collector.LinkCollector}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+index.\+collector.\+Link\+Collector.\+create (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{session,  }\item[{}]{options,  }\item[{}]{suppress\+\_\+no\+\_\+index = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param session: The Session to use to make requests.
+:param suppress_no_index: Whether to ignore the --no-index option
+    when constructing the SearchScope object.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_add011fc2e36cd20b4e9fb30ea262259a}\label{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector_add011fc2e36cd20b4e9fb30ea262259a}} 
+\index{pip.\_internal.index.collector.LinkCollector@{pip.\_internal.index.collector.LinkCollector}!fetch\_page@{fetch\_page}}
+\index{fetch\_page@{fetch\_page}!pip.\_internal.index.collector.LinkCollector@{pip.\_internal.index.collector.LinkCollector}}
+\doxysubsubsection{\texorpdfstring{fetch\_page()}{fetch\_page()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+index.\+collector.\+Link\+Collector.\+fetch\+\_\+page (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{location }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Fetch an HTML page containing package links.
+\end{DoxyVerb}
+ 

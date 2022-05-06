@@ -1,0 +1,55 @@
+\hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set}{}\doxysection{pip.\+\_\+internal.\+req.\+req\+\_\+uninstall.\+Stashed\+Uninstall\+Path\+Set Class Reference}
+\label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set}\index{pip.\_internal.req.req\_uninstall.StashedUninstallPathSet@{pip.\_internal.req.req\_uninstall.StashedUninstallPathSet}}
+Inheritance diagram for pip.\+\_\+internal.\+req.\+req\+\_\+uninstall.\+Stashed\+Uninstall\+Path\+Set\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set_ad3e9803c1e3d7d00ac3eadbb30148b7d}\label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set_ad3e9803c1e3d7d00ac3eadbb30148b7d}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set_a62c5b7a661d108ebcc8b7eef77a250db}{stash}} (self, path)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set_a8553d9a1a7bb88f16474b4cedf97ce31}{commit}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set_a956ca5de277df402aedd615ba270ea78}{rollback}} (self)
+\item 
+\mbox{\Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set_a3f63fe33e7f679ac9a279ca93dc0e0ce}\label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set_a3f63fe33e7f679ac9a279ca93dc0e0ce}} 
+def {\bfseries can\+\_\+rollback} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A set of file rename operations to stash files while
+tentatively uninstalling them.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set_a8553d9a1a7bb88f16474b4cedf97ce31}\label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set_a8553d9a1a7bb88f16474b4cedf97ce31}} 
+\index{pip.\_internal.req.req\_uninstall.StashedUninstallPathSet@{pip.\_internal.req.req\_uninstall.StashedUninstallPathSet}!commit@{commit}}
+\index{commit@{commit}!pip.\_internal.req.req\_uninstall.StashedUninstallPathSet@{pip.\_internal.req.req\_uninstall.StashedUninstallPathSet}}
+\doxysubsubsection{\texorpdfstring{commit()}{commit()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+req.\+req\+\_\+uninstall.\+Stashed\+Uninstall\+Path\+Set.\+commit (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Commits the uninstall by removing stashed files.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set_a956ca5de277df402aedd615ba270ea78}\label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set_a956ca5de277df402aedd615ba270ea78}} 
+\index{pip.\_internal.req.req\_uninstall.StashedUninstallPathSet@{pip.\_internal.req.req\_uninstall.StashedUninstallPathSet}!rollback@{rollback}}
+\index{rollback@{rollback}!pip.\_internal.req.req\_uninstall.StashedUninstallPathSet@{pip.\_internal.req.req\_uninstall.StashedUninstallPathSet}}
+\doxysubsubsection{\texorpdfstring{rollback()}{rollback()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+req.\+req\+\_\+uninstall.\+Stashed\+Uninstall\+Path\+Set.\+rollback (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Undoes the uninstall by moving stashed files back.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set_a62c5b7a661d108ebcc8b7eef77a250db}\label{classpip_1_1__internal_1_1req_1_1req__uninstall_1_1_stashed_uninstall_path_set_a62c5b7a661d108ebcc8b7eef77a250db}} 
+\index{pip.\_internal.req.req\_uninstall.StashedUninstallPathSet@{pip.\_internal.req.req\_uninstall.StashedUninstallPathSet}!stash@{stash}}
+\index{stash@{stash}!pip.\_internal.req.req\_uninstall.StashedUninstallPathSet@{pip.\_internal.req.req\_uninstall.StashedUninstallPathSet}}
+\doxysubsubsection{\texorpdfstring{stash()}{stash()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+req.\+req\+\_\+uninstall.\+Stashed\+Uninstall\+Path\+Set.\+stash (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Stashes the directory or file and returns its new location.
+Handle symlinks as files to avoid modifying the symlink targets.
+\end{DoxyVerb}
+ 

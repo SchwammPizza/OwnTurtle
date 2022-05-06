@@ -1,0 +1,76 @@
+\hypertarget{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command}{}\doxysection{pip.\+\_\+internal.\+commands.\+install.\+Install\+Command Class Reference}
+\label{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command}\index{pip.\_internal.commands.install.InstallCommand@{pip.\_internal.commands.install.InstallCommand}}
+Inheritance diagram for pip.\+\_\+internal.\+commands.\+install.\+Install\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.912281cm]{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_aaf86b3064749f8af89be6cfb1c216d46}{add\+\_\+options}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_aed853149716837d308440b8e2405a75c}{run}} (self, options, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_a2583ee29528431969dc568cab7cd0742}{usage}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Install packages from:
+
+- PyPI (and other indexes) using requirement specifiers.
+- VCS project urls.
+- Local project directories.
+- Local or remote source archives.
+
+pip also supports installing from "requirements files", which provide
+an easy way to specify a whole environment to be installed.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_aaf86b3064749f8af89be6cfb1c216d46}\label{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_aaf86b3064749f8af89be6cfb1c216d46}} 
+\index{pip.\_internal.commands.install.InstallCommand@{pip.\_internal.commands.install.InstallCommand}!add\_options@{add\_options}}
+\index{add\_options@{add\_options}!pip.\_internal.commands.install.InstallCommand@{pip.\_internal.commands.install.InstallCommand}}
+\doxysubsubsection{\texorpdfstring{add\_options()}{add\_options()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+commands.\+install.\+Install\+Command.\+add\+\_\+options (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_aed853149716837d308440b8e2405a75c}\label{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_aed853149716837d308440b8e2405a75c}} 
+\index{pip.\_internal.commands.install.InstallCommand@{pip.\_internal.commands.install.InstallCommand}!run@{run}}
+\index{run@{run}!pip.\_internal.commands.install.InstallCommand@{pip.\_internal.commands.install.InstallCommand}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+commands.\+install.\+Install\+Command.\+run (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{options,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_a2583ee29528431969dc568cab7cd0742}\label{classpip_1_1__internal_1_1commands_1_1install_1_1_install_command_a2583ee29528431969dc568cab7cd0742}} 
+\index{pip.\_internal.commands.install.InstallCommand@{pip.\_internal.commands.install.InstallCommand}!usage@{usage}}
+\index{usage@{usage}!pip.\_internal.commands.install.InstallCommand@{pip.\_internal.commands.install.InstallCommand}}
+\doxysubsubsection{\texorpdfstring{usage}{usage}}
+{\footnotesize\ttfamily string pip.\+\_\+internal.\+commands.\+install.\+Install\+Command.\+usage\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{      \%prog [options] <requirement specifier> [package-\/index-\/options] ...}}
+\DoxyCodeLine{\textcolor{stringliteral}{      \%prog [options] -\/r <requirements file> [package-\/index-\/options] ...}}
+\DoxyCodeLine{\textcolor{stringliteral}{      \%prog [options] [-\/e] <vcs project url> ...}}
+\DoxyCodeLine{\textcolor{stringliteral}{      \%prog [options] [-\/e] <local project path> ...}}
+\DoxyCodeLine{\textcolor{stringliteral}{      \%prog [options] <archive url/path> ..."{}"{}"{}}}
+
+\end{DoxyCode}

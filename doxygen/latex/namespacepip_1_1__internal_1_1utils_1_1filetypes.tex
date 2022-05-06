@@ -1,0 +1,54 @@
+\hypertarget{namespacepip_1_1__internal_1_1utils_1_1filetypes}{}\doxysection{pip.\+\_\+internal.\+utils.\+filetypes Namespace Reference}
+\label{namespacepip_1_1__internal_1_1utils_1_1filetypes}\index{pip.\_internal.utils.filetypes@{pip.\_internal.utils.filetypes}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1filetypes_a8ae31b26282f697004f914d5ebb8b01c}\label{namespacepip_1_1__internal_1_1utils_1_1filetypes_a8ae31b26282f697004f914d5ebb8b01c}} 
+string {\bfseries WHEEL\+\_\+\+EXTENSION} = \textquotesingle{}.whl\textquotesingle{}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1filetypes_ad0cb98196aff39c8835c426ed37f1670}\label{namespacepip_1_1__internal_1_1utils_1_1filetypes_ad0cb98196aff39c8835c426ed37f1670}} 
+tuple {\bfseries BZ2\+\_\+\+EXTENSIONS} = (\textquotesingle{}.tar.\+bz2\textquotesingle{}, \textquotesingle{}.tbz\textquotesingle{})
+\item 
+tuple \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1filetypes_af0ef7efa54545047f6e7db3fe2a8aed5}{XZ\+\_\+\+EXTENSIONS}}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1filetypes_a1a13e55bbe68600d60b23131c5046973}\label{namespacepip_1_1__internal_1_1utils_1_1filetypes_a1a13e55bbe68600d60b23131c5046973}} 
+tuple {\bfseries ZIP\+\_\+\+EXTENSIONS} = (\textquotesingle{}.zip\textquotesingle{}, WHEEL\+\_\+\+EXTENSION)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1filetypes_a83766ea6453a89a41b748b82e2b6c8d8}\label{namespacepip_1_1__internal_1_1utils_1_1filetypes_a83766ea6453a89a41b748b82e2b6c8d8}} 
+tuple {\bfseries TAR\+\_\+\+EXTENSIONS} = (\textquotesingle{}.tar.\+gz\textquotesingle{}, \textquotesingle{}.tgz\textquotesingle{}, \textquotesingle{}.tar\textquotesingle{})
+\item 
+tuple \mbox{\hyperlink{namespacepip_1_1__internal_1_1utils_1_1filetypes_a69bf4c9fb0c6fec44cebde5ace370b20}{ARCHIVE\+\_\+\+EXTENSIONS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Filetype information.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1filetypes_a69bf4c9fb0c6fec44cebde5ace370b20}\label{namespacepip_1_1__internal_1_1utils_1_1filetypes_a69bf4c9fb0c6fec44cebde5ace370b20}} 
+\index{pip.\_internal.utils.filetypes@{pip.\_internal.utils.filetypes}!ARCHIVE\_EXTENSIONS@{ARCHIVE\_EXTENSIONS}}
+\index{ARCHIVE\_EXTENSIONS@{ARCHIVE\_EXTENSIONS}!pip.\_internal.utils.filetypes@{pip.\_internal.utils.filetypes}}
+\doxysubsubsection{\texorpdfstring{ARCHIVE\_EXTENSIONS}{ARCHIVE\_EXTENSIONS}}
+{\footnotesize\ttfamily tuple pip.\+\_\+internal.\+utils.\+filetypes.\+ARCHIVE\+\_\+\+EXTENSIONS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  (}
+\DoxyCodeLine{2     ZIP\_EXTENSIONS + BZ2\_EXTENSIONS + TAR\_EXTENSIONS + XZ\_EXTENSIONS}
+\DoxyCodeLine{3 )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1utils_1_1filetypes_af0ef7efa54545047f6e7db3fe2a8aed5}\label{namespacepip_1_1__internal_1_1utils_1_1filetypes_af0ef7efa54545047f6e7db3fe2a8aed5}} 
+\index{pip.\_internal.utils.filetypes@{pip.\_internal.utils.filetypes}!XZ\_EXTENSIONS@{XZ\_EXTENSIONS}}
+\index{XZ\_EXTENSIONS@{XZ\_EXTENSIONS}!pip.\_internal.utils.filetypes@{pip.\_internal.utils.filetypes}}
+\doxysubsubsection{\texorpdfstring{XZ\_EXTENSIONS}{XZ\_EXTENSIONS}}
+{\footnotesize\ttfamily tuple pip.\+\_\+internal.\+utils.\+filetypes.\+XZ\+\_\+\+EXTENSIONS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  (\textcolor{stringliteral}{'.tar.xz'}, \textcolor{stringliteral}{'.txz'}, \textcolor{stringliteral}{'.tlz'},}
+\DoxyCodeLine{2                  \textcolor{stringliteral}{'.tar.lz'}, \textcolor{stringliteral}{'.tar.lzma'})}
+
+\end{DoxyCode}

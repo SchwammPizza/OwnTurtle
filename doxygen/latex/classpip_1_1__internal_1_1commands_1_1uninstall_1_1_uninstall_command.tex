@@ -1,0 +1,71 @@
+\hypertarget{classpip_1_1__internal_1_1commands_1_1uninstall_1_1_uninstall_command}{}\doxysection{pip.\+\_\+internal.\+commands.\+uninstall.\+Uninstall\+Command Class Reference}
+\label{classpip_1_1__internal_1_1commands_1_1uninstall_1_1_uninstall_command}\index{pip.\_internal.commands.uninstall.UninstallCommand@{pip.\_internal.commands.uninstall.UninstallCommand}}
+Inheritance diagram for pip.\+\_\+internal.\+commands.\+uninstall.\+Uninstall\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.274854cm]{classpip_1_1__internal_1_1commands_1_1uninstall_1_1_uninstall_command}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1uninstall_1_1_uninstall_command_ababeb27770df5ac9d32df4aee3bb739e}{add\+\_\+options}} (self)
+\item 
+def \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1uninstall_1_1_uninstall_command_a2471671e1b8bf4fb7f7015c925f7e1e0}{run}} (self, options, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1uninstall_1_1_uninstall_command_ad31ff4ade457f8c0459d6562f2b121e6}{usage}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Uninstall packages.
+
+pip is able to uninstall most installed packages. Known exceptions are:
+
+- Pure distutils packages installed with ``python setup.py install``, which
+  leave behind no metadata to determine what files were installed.
+- Script wrappers installed by ``python setup.py develop``.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1uninstall_1_1_uninstall_command_ababeb27770df5ac9d32df4aee3bb739e}\label{classpip_1_1__internal_1_1commands_1_1uninstall_1_1_uninstall_command_ababeb27770df5ac9d32df4aee3bb739e}} 
+\index{pip.\_internal.commands.uninstall.UninstallCommand@{pip.\_internal.commands.uninstall.UninstallCommand}!add\_options@{add\_options}}
+\index{add\_options@{add\_options}!pip.\_internal.commands.uninstall.UninstallCommand@{pip.\_internal.commands.uninstall.UninstallCommand}}
+\doxysubsubsection{\texorpdfstring{add\_options()}{add\_options()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+commands.\+uninstall.\+Uninstall\+Command.\+add\+\_\+options (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}.
+
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1uninstall_1_1_uninstall_command_a2471671e1b8bf4fb7f7015c925f7e1e0}\label{classpip_1_1__internal_1_1commands_1_1uninstall_1_1_uninstall_command_a2471671e1b8bf4fb7f7015c925f7e1e0}} 
+\index{pip.\_internal.commands.uninstall.UninstallCommand@{pip.\_internal.commands.uninstall.UninstallCommand}!run@{run}}
+\index{run@{run}!pip.\_internal.commands.uninstall.UninstallCommand@{pip.\_internal.commands.uninstall.UninstallCommand}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+commands.\+uninstall.\+Uninstall\+Command.\+run (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{options,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1base__command_1_1_command}{pip.\+\_\+internal.\+cli.\+base\+\_\+command.\+Command}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classpip_1_1__internal_1_1commands_1_1uninstall_1_1_uninstall_command_ad31ff4ade457f8c0459d6562f2b121e6}\label{classpip_1_1__internal_1_1commands_1_1uninstall_1_1_uninstall_command_ad31ff4ade457f8c0459d6562f2b121e6}} 
+\index{pip.\_internal.commands.uninstall.UninstallCommand@{pip.\_internal.commands.uninstall.UninstallCommand}!usage@{usage}}
+\index{usage@{usage}!pip.\_internal.commands.uninstall.UninstallCommand@{pip.\_internal.commands.uninstall.UninstallCommand}}
+\doxysubsubsection{\texorpdfstring{usage}{usage}}
+{\footnotesize\ttfamily string pip.\+\_\+internal.\+commands.\+uninstall.\+Uninstall\+Command.\+usage\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{      \%prog [options] <package> ...}}
+\DoxyCodeLine{\textcolor{stringliteral}{      \%prog [options] -\/r <requirements file> ..."{}"{}"{}}}
+
+\end{DoxyCode}

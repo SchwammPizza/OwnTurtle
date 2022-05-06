@@ -1,0 +1,83 @@
+\hypertarget{namespacepip_1_1__internal_1_1index_1_1collector}{}\doxysection{pip.\+\_\+internal.\+index.\+collector Namespace Reference}
+\label{namespacepip_1_1__internal_1_1index_1_1collector}\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1___not_h_t_m_l}{\+\_\+\+Not\+HTML}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1___not_h_t_t_p}{\+\_\+\+Not\+HTTP}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1_cacheable_page_content}{Cacheable\+Page\+Content}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1_collected_links}{Collected\+Links}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1_h_t_m_l_page}{HTMLPage}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1_link_collector}{Link\+Collector}}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1index_1_1collector_1_1_lru_cache}{Lru\+Cache}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_a8c09caa839221a6986dfbd3987efef6a}\label{namespacepip_1_1__internal_1_1index_1_1collector_a8c09caa839221a6986dfbd3987efef6a}} 
+def {\bfseries noop\+\_\+lru\+\_\+cache} (maxsize=None)
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_ad69de07647f6721802448b92f5fa81a4}{with\+\_\+cached\+\_\+html\+\_\+pages}} (fn)
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_aead9896456768afc03a79a0be9cc0579}{parse\+\_\+links}} (page)
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1collector_a9366a9bde07b9a223e8263d17e5339b5}{group\+\_\+locations}} (locations, expand\+\_\+dir=False)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_aebd799a8209e5584270b728dfcbd8d48}\label{namespacepip_1_1__internal_1_1index_1_1collector_aebd799a8209e5584270b728dfcbd8d48}} 
+{\bfseries HTMLElement} = xml.\+etree.\+Element\+Tree.\+Element
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_a248367a642c596833022d146d90c48b3}\label{namespacepip_1_1__internal_1_1index_1_1collector_a248367a642c596833022d146d90c48b3}} 
+{\bfseries Response\+Headers} = Mutable\+Mapping\mbox{[}str, str\mbox{]}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_a6a3a0c9ba917f4206f29d6cad5e9e34f}\label{namespacepip_1_1__internal_1_1index_1_1collector_a6a3a0c9ba917f4206f29d6cad5e9e34f}} 
+{\bfseries F} = Type\+Var(\textquotesingle{}F\textquotesingle{})
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_aa06c5ddfbbe781a2898e18ced297b032}\label{namespacepip_1_1__internal_1_1index_1_1collector_aa06c5ddfbbe781a2898e18ced297b032}} 
+{\bfseries logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The main purpose of this module is to expose LinkCollector.collect_links().
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_a9366a9bde07b9a223e8263d17e5339b5}\label{namespacepip_1_1__internal_1_1index_1_1collector_a9366a9bde07b9a223e8263d17e5339b5}} 
+\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!group\_locations@{group\_locations}}
+\index{group\_locations@{group\_locations}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{group\_locations()}{group\_locations()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+index.\+collector.\+group\+\_\+locations (\begin{DoxyParamCaption}\item[{}]{locations,  }\item[{}]{expand\+\_\+dir = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Divide a list of locations into two groups: "files" (archives) and "urls."
+
+:return: A pair of lists (files, urls).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_aead9896456768afc03a79a0be9cc0579}\label{namespacepip_1_1__internal_1_1index_1_1collector_aead9896456768afc03a79a0be9cc0579}} 
+\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!parse\_links@{parse\_links}}
+\index{parse\_links@{parse\_links}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{parse\_links()}{parse\_links()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+index.\+collector.\+parse\+\_\+links (\begin{DoxyParamCaption}\item[{}]{page }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse an HTML document, and yield its anchor elements as Link objects.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1__internal_1_1index_1_1collector_ad69de07647f6721802448b92f5fa81a4}\label{namespacepip_1_1__internal_1_1index_1_1collector_ad69de07647f6721802448b92f5fa81a4}} 
+\index{pip.\_internal.index.collector@{pip.\_internal.index.collector}!with\_cached\_html\_pages@{with\_cached\_html\_pages}}
+\index{with\_cached\_html\_pages@{with\_cached\_html\_pages}!pip.\_internal.index.collector@{pip.\_internal.index.collector}}
+\doxysubsubsection{\texorpdfstring{with\_cached\_html\_pages()}{with\_cached\_html\_pages()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+index.\+collector.\+with\+\_\+cached\+\_\+html\+\_\+pages (\begin{DoxyParamCaption}\item[{}]{fn }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a function that parses an Iterable[Link] from an HTMLPage, cache the
+function's result (keyed by CacheablePageContent), unless the HTMLPage
+`page` has `page.cache_link_parsing == False`.
+\end{DoxyVerb}
+ 

@@ -1,0 +1,29 @@
+\hypertarget{subclass-example_8hpp_source}{}\doxysection{subclass-\/example.hpp}
+\label{subclass-example_8hpp_source}\index{doxygen-\/awesome-\/css-\/main/include/MyLibrary/subclass-\/example.hpp@{doxygen-\/awesome-\/css-\/main/include/MyLibrary/subclass-\/example.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}example.hpp"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{keyword}{namespace }MyLibrary \{}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{11     \textcolor{keyword}{class }\mbox{\hyperlink{class_my_library_1_1_subclass_example}{SubclassExample}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_my_library_1_1_example}{Example}} \{}
+\DoxyCodeLine{12     \textcolor{keyword}{public}:}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{18         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_my_library_1_1_subclass_example_a6c1b7e5c6e56d31a169ddd42e8992300}{virtualfunc}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{26         \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{27         std::shared\_ptr<std::string> \mbox{\hyperlink{class_my_library_1_1_subclass_example_a2c69c14f8d3f516b457470a6d0d7c5ba}{long\_function\_with\_many\_parameters}}(std::shared\_ptr<T>\& param1, std::shared\_ptr<std::string>\& param2, \textcolor{keywordtype}{bool} parameter3) \{}
+\DoxyCodeLine{28             \textcolor{keywordflow}{if}(\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{29                 std::cout << \textcolor{stringliteral}{"{}this even has some code."{}} << std::endl;}
+\DoxyCodeLine{30             \}}
+\DoxyCodeLine{31         \}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35 \}}
+\DoxyCodeLine{36 }
+
+\end{DoxyCode}

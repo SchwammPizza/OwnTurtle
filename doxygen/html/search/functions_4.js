@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['getheading_0',['getHeading',['../class_turtle_1_1_turtle.html#a817044b0a7ddc399a6639c5879d5f008',1,'Turtle::Turtle']]],
-  ['getpos_1',['getPos',['../class_turtle_1_1_turtle.html#a2c4045b214f4fd6836d0266ed2e5fd3f',1,'Turtle::Turtle']]],
-  ['getscreensize_2',['getScreenSize',['../class_turtle_1_1_turtle.html#aab724c511ad6e6379a3684b453568869',1,'Turtle::Turtle']]],
-  ['getturtlecolor_3',['getTurtleColor',['../class_turtle_1_1_turtle.html#a9ac404a7da626dc81aa753fb71c09dd8',1,'Turtle::Turtle']]],
-  ['goto_4',['goto',['../class_turtle_1_1_turtle.html#aa52d44f9568b6901c25c2a098b27068f',1,'Turtle::Turtle']]]
+  ['getheading_0',['getHeading',['../classturtlelib_1_1_turtle_1_1_turtle.html#aa14efd7f507c0157df69cfe8f042ade1',1,'turtlelib::Turtle::Turtle']]],
+  ['getpos_1',['getPos',['../classturtlelib_1_1_turtle_1_1_turtle.html#a92f3c49ac600482010e305e329137fa1',1,'turtlelib::Turtle::Turtle']]],
+  ['getscreensize_2',['getScreenSize',['../classturtlelib_1_1_turtle_1_1_turtle.html#a15a7dab54d33998c915eeba9ce0be9ca',1,'turtlelib::Turtle::Turtle']]],
+  ['getturtlecolor_3',['getTurtleColor',['../classturtlelib_1_1_turtle_1_1_turtle.html#a2d7e008ae739d3bf673ffb6d52416cf8',1,'turtlelib::Turtle::Turtle']]],
+  ['goto_4',['goto',['../classturtlelib_1_1_turtle_1_1_turtle.html#a4deabd8b1a050b1b68bed4359eb35226',1,'turtlelib::Turtle::Turtle']]]
 ];

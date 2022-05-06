@@ -1,0 +1,106 @@
+\hypertarget{namespacepip_1_1__internal_1_1req_1_1constructors}{}\doxysection{pip.\+\_\+internal.\+req.\+constructors Namespace Reference}
+\label{namespacepip_1_1__internal_1_1req_1_1constructors}\index{pip.\_internal.req.constructors@{pip.\_internal.req.constructors}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpip_1_1__internal_1_1req_1_1constructors_1_1_requirement_parts}{Requirement\+Parts}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_ab664d504bab236974a158a88984fe657}{is\+\_\+archive\+\_\+file}} (name)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1constructors_a29955c4bc32fc2f80ca49ebb585100af}\label{namespacepip_1_1__internal_1_1req_1_1constructors_a29955c4bc32fc2f80ca49ebb585100af}} 
+def {\bfseries convert\+\_\+extras} (extras)
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_ac2c68d670442590283ec2d86c1d13dd4}{parse\+\_\+editable}} (editable\+\_\+req)
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_a361bce2fe5fcf2c86d37f602878d096b}{deduce\+\_\+helpful\+\_\+msg}} (req)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1constructors_ad1f17d71e7bf4a4f3e7e1f9219e92654}\label{namespacepip_1_1__internal_1_1req_1_1constructors_ad1f17d71e7bf4a4f3e7e1f9219e92654}} 
+def {\bfseries parse\+\_\+req\+\_\+from\+\_\+editable} (editable\+\_\+req)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1constructors_a6ef0babd0219317e92de885ca7e37489}\label{namespacepip_1_1__internal_1_1req_1_1constructors_a6ef0babd0219317e92de885ca7e37489}} 
+def {\bfseries install\+\_\+req\+\_\+from\+\_\+editable} (editable\+\_\+req, comes\+\_\+from=None, use\+\_\+pep517=None, isolated=False, options=None, constraint=False, user\+\_\+supplied=False)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1constructors_acfb2162125bb400c1b7d8a9abbe1771d}\label{namespacepip_1_1__internal_1_1req_1_1constructors_acfb2162125bb400c1b7d8a9abbe1771d}} 
+def {\bfseries parse\+\_\+req\+\_\+from\+\_\+line} (name, line\+\_\+source)
+\item 
+def \mbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_a627ed3c7246a72ae1e9c5aa38120a497}{install\+\_\+req\+\_\+from\+\_\+line}} (name, comes\+\_\+from=None, use\+\_\+pep517=None, isolated=False, options=None, constraint=False, line\+\_\+source=None, user\+\_\+supplied=False)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1constructors_a6cad5f9f1ae0284162fd9a6597374428}\label{namespacepip_1_1__internal_1_1req_1_1constructors_a6cad5f9f1ae0284162fd9a6597374428}} 
+def {\bfseries install\+\_\+req\+\_\+from\+\_\+req\+\_\+string} (req\+\_\+string, comes\+\_\+from=None, isolated=False, use\+\_\+pep517=None, user\+\_\+supplied=False)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1constructors_a093d3da992203ec555c1f58cb9d83fe5}\label{namespacepip_1_1__internal_1_1req_1_1constructors_a093d3da992203ec555c1f58cb9d83fe5}} 
+def {\bfseries install\+\_\+req\+\_\+from\+\_\+parsed\+\_\+requirement} (parsed\+\_\+req, isolated=False, use\+\_\+pep517=None, user\+\_\+supplied=False)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1constructors_a3fa73cdce7cd1839ac123a5fea17055d}\label{namespacepip_1_1__internal_1_1req_1_1constructors_a3fa73cdce7cd1839ac123a5fea17055d}} 
+{\bfseries logger} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1constructors_ae91c811dff5ff188e8d6847af9823118}\label{namespacepip_1_1__internal_1_1req_1_1constructors_ae91c811dff5ff188e8d6847af9823118}} 
+{\bfseries operators} = Specifier.\+\_\+operators.\+keys()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Backing implementation for InstallRequirement's various constructors
+
+The idea here is that these formed a major chunk of InstallRequirement's size
+so, moving them and support code dedicated to them outside of that class
+helps creates for better understandability for the rest of the code.
+
+These are meant to be used elsewhere within pip to create instances of
+InstallRequirement.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1constructors_a361bce2fe5fcf2c86d37f602878d096b}\label{namespacepip_1_1__internal_1_1req_1_1constructors_a361bce2fe5fcf2c86d37f602878d096b}} 
+\index{pip.\_internal.req.constructors@{pip.\_internal.req.constructors}!deduce\_helpful\_msg@{deduce\_helpful\_msg}}
+\index{deduce\_helpful\_msg@{deduce\_helpful\_msg}!pip.\_internal.req.constructors@{pip.\_internal.req.constructors}}
+\doxysubsubsection{\texorpdfstring{deduce\_helpful\_msg()}{deduce\_helpful\_msg()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+req.\+constructors.\+deduce\+\_\+helpful\+\_\+msg (\begin{DoxyParamCaption}\item[{}]{req }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns helpful msg in case requirements file does not exist,
+or cannot be parsed.
+
+:params req: Requirements file path
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1constructors_a627ed3c7246a72ae1e9c5aa38120a497}\label{namespacepip_1_1__internal_1_1req_1_1constructors_a627ed3c7246a72ae1e9c5aa38120a497}} 
+\index{pip.\_internal.req.constructors@{pip.\_internal.req.constructors}!install\_req\_from\_line@{install\_req\_from\_line}}
+\index{install\_req\_from\_line@{install\_req\_from\_line}!pip.\_internal.req.constructors@{pip.\_internal.req.constructors}}
+\doxysubsubsection{\texorpdfstring{install\_req\_from\_line()}{install\_req\_from\_line()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+req.\+constructors.\+install\+\_\+req\+\_\+from\+\_\+line (\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{comes\+\_\+from = {\ttfamily None},  }\item[{}]{use\+\_\+pep517 = {\ttfamily None},  }\item[{}]{isolated = {\ttfamily False},  }\item[{}]{options = {\ttfamily None},  }\item[{}]{constraint = {\ttfamily False},  }\item[{}]{line\+\_\+source = {\ttfamily None},  }\item[{}]{user\+\_\+supplied = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates an InstallRequirement from a name, which might be a
+requirement, directory containing 'setup.py', filename, or URL.
+
+:param line_source: An optional string describing where the line is from,
+    for logging purposes in case of an error.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1constructors_ab664d504bab236974a158a88984fe657}\label{namespacepip_1_1__internal_1_1req_1_1constructors_ab664d504bab236974a158a88984fe657}} 
+\index{pip.\_internal.req.constructors@{pip.\_internal.req.constructors}!is\_archive\_file@{is\_archive\_file}}
+\index{is\_archive\_file@{is\_archive\_file}!pip.\_internal.req.constructors@{pip.\_internal.req.constructors}}
+\doxysubsubsection{\texorpdfstring{is\_archive\_file()}{is\_archive\_file()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+req.\+constructors.\+is\+\_\+archive\+\_\+file (\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return True if `name` is a considered as an archive file.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepip_1_1__internal_1_1req_1_1constructors_ac2c68d670442590283ec2d86c1d13dd4}\label{namespacepip_1_1__internal_1_1req_1_1constructors_ac2c68d670442590283ec2d86c1d13dd4}} 
+\index{pip.\_internal.req.constructors@{pip.\_internal.req.constructors}!parse\_editable@{parse\_editable}}
+\index{parse\_editable@{parse\_editable}!pip.\_internal.req.constructors@{pip.\_internal.req.constructors}}
+\doxysubsubsection{\texorpdfstring{parse\_editable()}{parse\_editable()}}
+{\footnotesize\ttfamily def pip.\+\_\+internal.\+req.\+constructors.\+parse\+\_\+editable (\begin{DoxyParamCaption}\item[{}]{editable\+\_\+req }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parses an editable requirement into:
+    - a requirement name
+    - an URL
+    - extras
+    - editable options
+Accepted requirements:
+    svn+http://blahblah@rev#egg=Foobar[baz]&subdirectory=version_subdir
+    .[some_extra]
+\end{DoxyVerb}
+ 
