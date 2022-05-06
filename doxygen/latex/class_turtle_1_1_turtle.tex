@@ -1,0 +1,261 @@
+\hypertarget{class_turtle_1_1_turtle}{}\doxysection{Turtle.\+Turtle Class Reference}
+\label{class_turtle_1_1_turtle}\index{Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class_turtle_1_1_turtle_a38aa1b18824922b11e6d48b0ef177509}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, list\mbox{[}int\mbox{]} screen\+Size=\mbox{[}400, 500\mbox{]}, tuple\mbox{[}float\mbox{]} background\+Color=(0, 0, 0), bool animation=False, str turtle\+Name=\char`\"{}Turtle\char`\"{})
+\item 
+list\mbox{[}int\mbox{]} \mbox{\hyperlink{class_turtle_1_1_turtle_aab724c511ad6e6379a3684b453568869}{get\+Screen\+Size}} (self)
+\item 
+tuple\mbox{[}float\mbox{]} \mbox{\hyperlink{class_turtle_1_1_turtle_a2c4045b214f4fd6836d0266ed2e5fd3f}{get\+Pos}} (self)
+\item 
+float \mbox{\hyperlink{class_turtle_1_1_turtle_a817044b0a7ddc399a6639c5879d5f008}{get\+Heading}} (self)
+\item 
+tuple\mbox{[}float\mbox{]} \mbox{\hyperlink{class_turtle_1_1_turtle_a9ac404a7da626dc81aa753fb71c09dd8}{get\+Turtle\+Color}} (self)
+\item 
+None \mbox{\hyperlink{class_turtle_1_1_turtle_a3f5ace10dd4de7497948f50daa510adf}{set\+Heading}} (self, float new\+Heading)
+\item 
+None \mbox{\hyperlink{class_turtle_1_1_turtle_ae7753f4d32c648a2de9074932e630c21}{set\+Pos}} (self, tuple\mbox{[}float\mbox{]} new\+Position)
+\item 
+None \mbox{\hyperlink{class_turtle_1_1_turtle_a7828eb865e3fd6abf669f108427732d5}{set\+Turtle\+Color}} (self, tuple\mbox{[}float\mbox{]} rgb\+Values)
+\item 
+None \mbox{\hyperlink{class_turtle_1_1_turtle_aba5aa2c38552e7606d6f95c0e02e7821}{set\+Speed}} (self, int speed)
+\item 
+None \mbox{\hyperlink{class_turtle_1_1_turtle_aaf1a8c58bebbdc8a23de00f6ad2f05f1}{forward}} (self, float distance)
+\item 
+None \mbox{\hyperlink{class_turtle_1_1_turtle_a2cd863d4e0e2d66e82b697bbabd91473}{backward}} (self, float distance)
+\item 
+None \mbox{\hyperlink{class_turtle_1_1_turtle_aa9f7c66dcefa546b3ea88a049ee3d4dd}{back}} (self, float distance)
+\item 
+None \mbox{\hyperlink{class_turtle_1_1_turtle_aa52d44f9568b6901c25c2a098b27068f}{goto}} (self, tuple\mbox{[}float\mbox{]} position)
+\item 
+None \mbox{\hyperlink{class_turtle_1_1_turtle_ad8e8ced9d23ad339fc5ea03ee496d237}{left}} (self, float angle)
+\item 
+None \mbox{\hyperlink{class_turtle_1_1_turtle_a3265531795412cc104c46cd2cc293183}{right}} (self, float angle)
+\item 
+None \mbox{\hyperlink{class_turtle_1_1_turtle_ab27374cadf65ca58329bcef8acd6761f}{pen\+Up}} (self)
+\item 
+None \mbox{\hyperlink{class_turtle_1_1_turtle_af8122f66d7d77ad7cc5f725d0d785517}{pen\+Down}} (self)
+\item 
+None \mbox{\hyperlink{class_turtle_1_1_turtle_a481623fc3fc57e09cc584057a0c03577}{clear}} (self)
+\item 
+None \mbox{\hyperlink{class_turtle_1_1_turtle_a9f327e36ad9646f053c68258183707dc}{show\+Result}} (self)
+\item 
+None \mbox{\hyperlink{class_turtle_1_1_turtle_a1364def201aa36429774dcf1fbb0fb5e}{circle}} (self, float radius, float degrees=360)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_turtle_1_1_turtle_a38aa1b18824922b11e6d48b0ef177509}\label{class_turtle_1_1_turtle_a38aa1b18824922b11e6d48b0ef177509}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None Turtle.\+Turtle.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{list\mbox{[}int\mbox{]} }]{screen\+Size = {\ttfamily \mbox{[}400,~500\mbox{]}},  }\item[{tuple\mbox{[}float\mbox{]} }]{background\+Color = {\ttfamily (0,~0,~0)},  }\item[{bool }]{animation = {\ttfamily False},  }\item[{str }]{turtle\+Name = {\ttfamily \char`\"{}Turtle\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a window to show the plane in which the turtle can move.
+
+:param shape: the size of the window in pixel
+:param backgroundColor: the RGB-Values of the background from the plane in range of 0 to 1
+:param animation: if true you can see how the turtle move, else it shows only the result if asked
+:param turtleName: the name of the turtle
+:return: nothing
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_turtle_1_1_turtle_aa9f7c66dcefa546b3ea88a049ee3d4dd}\label{class_turtle_1_1_turtle_aa9f7c66dcefa546b3ea88a049ee3d4dd}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!back@{back}}
+\index{back@{back}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{back()}{back()}}
+{\footnotesize\ttfamily  None Turtle.\+Turtle.\+back (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{distance }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draw a line in opposite direction of the heading
+
+:param distance: length of the line
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_a2cd863d4e0e2d66e82b697bbabd91473}\label{class_turtle_1_1_turtle_a2cd863d4e0e2d66e82b697bbabd91473}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!backward@{backward}}
+\index{backward@{backward}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{backward()}{backward()}}
+{\footnotesize\ttfamily  None Turtle.\+Turtle.\+backward (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{distance }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draw a line in opposite direction of the heading
+
+:param distance: length of the line
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_a1364def201aa36429774dcf1fbb0fb5e}\label{class_turtle_1_1_turtle_a1364def201aa36429774dcf1fbb0fb5e}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!circle@{circle}}
+\index{circle@{circle}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{circle()}{circle()}}
+{\footnotesize\ttfamily  None Turtle.\+Turtle.\+circle (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{radius,  }\item[{float }]{degrees = {\ttfamily 360} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws an circle. If the radius is negative, the middlepoint of the circle is 90° left from the turtleheading, else right.
+When degrees is positive, then the turtle will circulate forward, else backward.
+
+:param radius: the radius in pixel
+:param degrees: the arc in degrees
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_a481623fc3fc57e09cc584057a0c03577}\label{class_turtle_1_1_turtle_a481623fc3fc57e09cc584057a0c03577}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!clear@{clear}}
+\index{clear@{clear}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily  None Turtle.\+Turtle.\+clear (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clears the plane from all drawing
+
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_aaf1a8c58bebbdc8a23de00f6ad2f05f1}\label{class_turtle_1_1_turtle_aaf1a8c58bebbdc8a23de00f6ad2f05f1}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!forward@{forward}}
+\index{forward@{forward}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily  None Turtle.\+Turtle.\+forward (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{distance }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draw a line in direction of the heading of the Turtle
+
+:param distance: the length of the line
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_a817044b0a7ddc399a6639c5879d5f008}\label{class_turtle_1_1_turtle_a817044b0a7ddc399a6639c5879d5f008}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!getHeading@{getHeading}}
+\index{getHeading@{getHeading}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{getHeading()}{getHeading()}}
+{\footnotesize\ttfamily  float Turtle.\+Turtle.\+get\+Heading (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:return: heading of the turtle
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_a2c4045b214f4fd6836d0266ed2e5fd3f}\label{class_turtle_1_1_turtle_a2c4045b214f4fd6836d0266ed2e5fd3f}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!getPos@{getPos}}
+\index{getPos@{getPos}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily  tuple\mbox{[}float\mbox{]} Turtle.\+Turtle.\+get\+Pos (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:return: position of the turtle
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_aab724c511ad6e6379a3684b453568869}\label{class_turtle_1_1_turtle_aab724c511ad6e6379a3684b453568869}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!getScreenSize@{getScreenSize}}
+\index{getScreenSize@{getScreenSize}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{getScreenSize()}{getScreenSize()}}
+{\footnotesize\ttfamily  list\mbox{[}int\mbox{]} Turtle.\+Turtle.\+get\+Screen\+Size (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:return: size of the turtleplane
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_a9ac404a7da626dc81aa753fb71c09dd8}\label{class_turtle_1_1_turtle_a9ac404a7da626dc81aa753fb71c09dd8}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!getTurtleColor@{getTurtleColor}}
+\index{getTurtleColor@{getTurtleColor}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{getTurtleColor()}{getTurtleColor()}}
+{\footnotesize\ttfamily  tuple\mbox{[}float\mbox{]} Turtle.\+Turtle.\+get\+Turtle\+Color (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:return: a tuple with the RGB-Values of the turtle in range of 0 to 1
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_aa52d44f9568b6901c25c2a098b27068f}\label{class_turtle_1_1_turtle_aa52d44f9568b6901c25c2a098b27068f}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!goto@{goto}}
+\index{goto@{goto}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{goto()}{goto()}}
+{\footnotesize\ttfamily  None Turtle.\+Turtle.\+goto (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{tuple\mbox{[}float\mbox{]}}]{position }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draw a line to the given position from the Turtles position. The heading will stay the same
+
+:param position: the coordinates to goto
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_ad8e8ced9d23ad339fc5ea03ee496d237}\label{class_turtle_1_1_turtle_ad8e8ced9d23ad339fc5ea03ee496d237}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!left@{left}}
+\index{left@{left}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{left()}{left()}}
+{\footnotesize\ttfamily  None Turtle.\+Turtle.\+left (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{angle }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Turns the Turtle it by the given Value counterclockwise
+
+:param angle: angle to turn in degrees
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_af8122f66d7d77ad7cc5f725d0d785517}\label{class_turtle_1_1_turtle_af8122f66d7d77ad7cc5f725d0d785517}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!penDown@{penDown}}
+\index{penDown@{penDown}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{penDown()}{penDown()}}
+{\footnotesize\ttfamily  None Turtle.\+Turtle.\+pen\+Down (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The Turtle draws again
+
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_ab27374cadf65ca58329bcef8acd6761f}\label{class_turtle_1_1_turtle_ab27374cadf65ca58329bcef8acd6761f}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!penUp@{penUp}}
+\index{penUp@{penUp}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{penUp()}{penUp()}}
+{\footnotesize\ttfamily  None Turtle.\+Turtle.\+pen\+Up (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The Turtle stop to draw if it moves
+
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_a3265531795412cc104c46cd2cc293183}\label{class_turtle_1_1_turtle_a3265531795412cc104c46cd2cc293183}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!right@{right}}
+\index{right@{right}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{right()}{right()}}
+{\footnotesize\ttfamily  None Turtle.\+Turtle.\+right (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{angle }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Turns the Turtle it by the given Value clockwise
+
+:param angle: angle to turn in degrees
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_a3f5ace10dd4de7497948f50daa510adf}\label{class_turtle_1_1_turtle_a3f5ace10dd4de7497948f50daa510adf}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!setHeading@{setHeading}}
+\index{setHeading@{setHeading}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{setHeading()}{setHeading()}}
+{\footnotesize\ttfamily  None Turtle.\+Turtle.\+set\+Heading (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{float}]{new\+Heading }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the heading of the Turtle
+
+:param newHeading: the Value in degrees
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_ae7753f4d32c648a2de9074932e630c21}\label{class_turtle_1_1_turtle_ae7753f4d32c648a2de9074932e630c21}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!setPos@{setPos}}
+\index{setPos@{setPos}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{setPos()}{setPos()}}
+{\footnotesize\ttfamily  None Turtle.\+Turtle.\+set\+Pos (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{tuple\mbox{[}float\mbox{]}}]{new\+Position }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Give the Turtle a new position on the plane
+
+:param newPostion: the Coordinates of the new postion
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_aba5aa2c38552e7606d6f95c0e02e7821}\label{class_turtle_1_1_turtle_aba5aa2c38552e7606d6f95c0e02e7821}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{setSpeed()}{setSpeed()}}
+{\footnotesize\ttfamily  None Turtle.\+Turtle.\+set\+Speed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{speed }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the speed of the Turtle
+
+:param speed: integer of the speed
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_a7828eb865e3fd6abf669f108427732d5}\label{class_turtle_1_1_turtle_a7828eb865e3fd6abf669f108427732d5}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!setTurtleColor@{setTurtleColor}}
+\index{setTurtleColor@{setTurtleColor}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{setTurtleColor()}{setTurtleColor()}}
+{\footnotesize\ttfamily  None Turtle.\+Turtle.\+set\+Turtle\+Color (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{tuple\mbox{[}float\mbox{]}}]{rgb\+Values }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the color of the Turtle
+
+:param rgbValues: tuple of RGB-Values in range 0 to 1
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_turtle_1_1_turtle_a9f327e36ad9646f053c68258183707dc}\label{class_turtle_1_1_turtle_a9f327e36ad9646f053c68258183707dc}} 
+\index{Turtle.Turtle@{Turtle.Turtle}!showResult@{showResult}}
+\index{showResult@{showResult}!Turtle.Turtle@{Turtle.Turtle}}
+\doxysubsubsection{\texorpdfstring{showResult()}{showResult()}}
+{\footnotesize\ttfamily  None Turtle.\+Turtle.\+show\+Result (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shows the result of the drawings
+
+:return: nothing
+\end{DoxyVerb}
+ 

@@ -1,0 +1,115 @@
+\hypertarget{class_window_1_1_window}{}\doxysection{Window.\+Window Class Reference}
+\label{class_window_1_1_window}\index{Window.Window@{Window.Window}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{class_window_1_1_window_abaa1f00842a10df0764f31c347950962}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, list\mbox{[}int\mbox{]} shape, tuple\mbox{[}float\mbox{]} background\+Color=(0, 0, 0), bool animation=False, str turtle\+Name=\char`\"{}Turtle\char`\"{})
+\item 
+None \mbox{\hyperlink{class_window_1_1_window_a4d1714af204faba336386cf5c52b527f}{reset\+Window}} (self)
+\item 
+None \mbox{\hyperlink{class_window_1_1_window_af8074fd9d82615e97265f5bf368be448}{set\+Animation}} (self, bool animation)
+\item 
+None \mbox{\hyperlink{class_window_1_1_window_a67cdf2a1ab8f0a48925cc78724ec0a7f}{set\+Speed}} (self, int speed)
+\item 
+None \mbox{\hyperlink{class_window_1_1_window_a07cebaedb25e8ccbece2874eb33c0757}{set\+Turtle\+Color}} (self, tuple\mbox{[}float\mbox{]} rgb\+Values)
+\item 
+tuple\mbox{[}float\mbox{]} \mbox{\hyperlink{class_window_1_1_window_ae98a21df9665c5abc037c61d9e27c1f1}{get\+Turtle\+Color}} (self)
+\item 
+None \mbox{\hyperlink{class_window_1_1_window_ae47eaebd837d4afd01d8bc23de171d32}{change\+Pixel}} (self, tuple\mbox{[}int\mbox{]} position)
+\item 
+None \mbox{\hyperlink{class_window_1_1_window_a63c322bd0a4725ac333006531208b9cf}{show}} (self, int wait=1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_window_1_1_window_abaa1f00842a10df0764f31c347950962}\label{class_window_1_1_window_abaa1f00842a10df0764f31c347950962}} 
+\index{Window.Window@{Window.Window}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Window.Window@{Window.Window}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None Window.\+Window.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{list\mbox{[}int\mbox{]}}]{shape,  }\item[{tuple\mbox{[}float\mbox{]} }]{background\+Color = {\ttfamily (0,~0,~0)},  }\item[{bool }]{animation = {\ttfamily False},  }\item[{str }]{turtle\+Name = {\ttfamily \char`\"{}Turtle\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a window to show the plane in which the turtle can move.
+
+:param shape: the size of the window in pixel
+:param backgroundColor: the RGB-Values of the background from the plane in range of 0 to 1
+:param animation: if true you can see how the turtle move, else it shows only the result if asked
+:param turtleName: the name of the turtle
+:return: nothing
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_window_1_1_window_ae47eaebd837d4afd01d8bc23de171d32}\label{class_window_1_1_window_ae47eaebd837d4afd01d8bc23de171d32}} 
+\index{Window.Window@{Window.Window}!changePixel@{changePixel}}
+\index{changePixel@{changePixel}!Window.Window@{Window.Window}}
+\doxysubsubsection{\texorpdfstring{changePixel()}{changePixel()}}
+{\footnotesize\ttfamily  None Window.\+Window.\+change\+Pixel (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{tuple\mbox{[}int\mbox{]}}]{position }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Colors a Pixel with the Color from the Turtle and show the change if the animation is activated
+
+:param position: tuple with the position of the pixel which have to change
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_window_1_1_window_ae98a21df9665c5abc037c61d9e27c1f1}\label{class_window_1_1_window_ae98a21df9665c5abc037c61d9e27c1f1}} 
+\index{Window.Window@{Window.Window}!getTurtleColor@{getTurtleColor}}
+\index{getTurtleColor@{getTurtleColor}!Window.Window@{Window.Window}}
+\doxysubsubsection{\texorpdfstring{getTurtleColor()}{getTurtleColor()}}
+{\footnotesize\ttfamily  tuple\mbox{[}float\mbox{]} Window.\+Window.\+get\+Turtle\+Color (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:return: rgb-Values of the turtle in range of 0 to 1
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_window_1_1_window_a4d1714af204faba336386cf5c52b527f}\label{class_window_1_1_window_a4d1714af204faba336386cf5c52b527f}} 
+\index{Window.Window@{Window.Window}!resetWindow@{resetWindow}}
+\index{resetWindow@{resetWindow}!Window.Window@{Window.Window}}
+\doxysubsubsection{\texorpdfstring{resetWindow()}{resetWindow()}}
+{\footnotesize\ttfamily  None Window.\+Window.\+reset\+Window (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Deletes all drawing on the plane
+
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_window_1_1_window_af8074fd9d82615e97265f5bf368be448}\label{class_window_1_1_window_af8074fd9d82615e97265f5bf368be448}} 
+\index{Window.Window@{Window.Window}!setAnimation@{setAnimation}}
+\index{setAnimation@{setAnimation}!Window.Window@{Window.Window}}
+\doxysubsubsection{\texorpdfstring{setAnimation()}{setAnimation()}}
+{\footnotesize\ttfamily  None Window.\+Window.\+set\+Animation (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{animation }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set if the Turtle has to show the way he draws or not.
+
+:param animation: boolean of animation
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_window_1_1_window_a67cdf2a1ab8f0a48925cc78724ec0a7f}\label{class_window_1_1_window_a67cdf2a1ab8f0a48925cc78724ec0a7f}} 
+\index{Window.Window@{Window.Window}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!Window.Window@{Window.Window}}
+\doxysubsubsection{\texorpdfstring{setSpeed()}{setSpeed()}}
+{\footnotesize\ttfamily  None Window.\+Window.\+set\+Speed (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{speed }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the speed which the Turtle use to draw, if the animation is activatet.
+
+:param speed: value of the speed
+:return nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_window_1_1_window_a07cebaedb25e8ccbece2874eb33c0757}\label{class_window_1_1_window_a07cebaedb25e8ccbece2874eb33c0757}} 
+\index{Window.Window@{Window.Window}!setTurtleColor@{setTurtleColor}}
+\index{setTurtleColor@{setTurtleColor}!Window.Window@{Window.Window}}
+\doxysubsubsection{\texorpdfstring{setTurtleColor()}{setTurtleColor()}}
+{\footnotesize\ttfamily  None Window.\+Window.\+set\+Turtle\+Color (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{tuple\mbox{[}float\mbox{]}}]{rgb\+Values }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the color with them the Turtle draw.
+
+:param RGBValues: tuple with the RGB-Values in range of 0 to 1
+:return: nothing
+\end{DoxyVerb}
+ \mbox{\Hypertarget{class_window_1_1_window_a63c322bd0a4725ac333006531208b9cf}\label{class_window_1_1_window_a63c322bd0a4725ac333006531208b9cf}} 
+\index{Window.Window@{Window.Window}!show@{show}}
+\index{show@{show}!Window.Window@{Window.Window}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily  None Window.\+Window.\+show (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int }]{wait = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shows the plane with the draws
+
+:param wait: shows the Turtleplane this time in milliseconds, if wait = 0 it stay until you close it
+:return: nothing
+\end{DoxyVerb}
+ 
